@@ -508,7 +508,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weighty = 0.1;
         jPanel7.add(jTextField43, gridBagConstraints);
 
-        jLabel21.setText("Profile");
+        jLabel21.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -517,7 +517,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weighty = 0.1;
         jPanel7.add(jLabel21, gridBagConstraints);
 
-        jLabel22.setText("Size");
+        jLabel22.setText("Profile");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -893,7 +893,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        gridBagConstraints.insets = new java.awt.Insets(10, 11, 10, 20);
         jPanel9.add(jPanel10, gridBagConstraints);
 
         jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -940,7 +940,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weighty = 0.1;
         jPanel12.add(jTextField58, gridBagConstraints);
 
-        jLabel48.setText("Profile");
+        jLabel48.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -950,7 +950,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weighty = 0.1;
         jPanel12.add(jLabel48, gridBagConstraints);
 
-        jLabel49.setText("Size");
+        jLabel49.setText("Profile");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -984,7 +984,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        gridBagConstraints.insets = new java.awt.Insets(10, 11, 10, 20);
         jPanel9.add(jPanel12, gridBagConstraints);
 
         jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1075,7 +1075,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 10);
         jPanel9.add(jPanel14, gridBagConstraints);
 
         jPanel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1167,7 +1167,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 10);
         jPanel9.add(jPanel15, gridBagConstraints);
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -1188,6 +1188,8 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         jPanel9.add(jLabel67, gridBagConstraints);
 

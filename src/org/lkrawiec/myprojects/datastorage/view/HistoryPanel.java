@@ -46,7 +46,7 @@ public class HistoryPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.GridBagLayout());
 
-        jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setText("Enter license plate of the car");
@@ -58,7 +58,11 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         jPanel1.add(jLabel1, gridBagConstraints);
 
-        jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -107,22 +111,25 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weighty = 0.5;
+        gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         add(jPanel1, gridBagConstraints);
 
         secondPanel.setBorder(new javax.swing.border.MatteBorder(null));
-        secondPanel.setLayout(new java.awt.GridBagLayout());
+        secondPanel.setLayout(new javax.swing.BoxLayout(secondPanel, javax.swing.BoxLayout.LINE_AXIS));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weightx = 1.5;
-        gridBagConstraints.weighty = 0.5;
+        gridBagConstraints.weightx = 1.6;
+        gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         add(secondPanel, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
