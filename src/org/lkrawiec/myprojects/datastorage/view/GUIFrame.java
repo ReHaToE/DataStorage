@@ -5,6 +5,8 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JPanel;
 
 /**
@@ -94,26 +96,55 @@ public class GUIFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
+        GUIFrame frame = new GUIFrame();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 //test
-                GUIFrame frame = new GUIFrame();
+                
                 frame.setFirstPanel(new ChangeFormPanel());
                 frame.setSecondPanel(new ButtonsPanel());
                 frame.setVisible(true);
             }
         });
+        
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            //test
+            
+            frame.setFirstPanel(new MainPanel());
+            frame.setSecondPanel(new ButtonsPanel());
+            frame.setVisible(true);
+        });
+        
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            //test
+            HistoryPanel hp = new HistoryPanel();
+            hp.setSecondPanel(new ChangeFormPanel());
+            frame.setFirstPanel(hp);
+            frame.setSecondPanel(new ButtonsPanel());
+            frame.setVisible(true);
+        });
     }
     
     public void setFirstPanel(JPanel panel) {
-        //firstPanel.removeAll();
+        firstPanel.removeAll();
         firstPanel.add(panel);
     }
     
     public void setSecondPanel(JPanel panel) {
-        //secondPanel.removeAll();
+        secondPanel.removeAll();
         secondPanel.add(panel);
     }
 

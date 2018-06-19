@@ -5,6 +5,8 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author lukii
@@ -18,6 +20,11 @@ public class HistoryPanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    public void setSecondPanel(JPanel panel) {
+        secondPanel.removeAll(); //FIXME
+        secondPanel.add(panel);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,7 +42,7 @@ public class HistoryPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        secondPanel = new javax.swing.JPanel();
 
         setLayout(new java.awt.GridBagLayout());
 
@@ -100,21 +107,21 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.weighty = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         add(jPanel1, gridBagConstraints);
 
-        jPanel2.setBorder(new javax.swing.border.MatteBorder(null));
-        jPanel2.setLayout(new java.awt.GridBagLayout());
+        secondPanel.setBorder(new javax.swing.border.MatteBorder(null));
+        secondPanel.setLayout(new java.awt.GridBagLayout());
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.weightx = 1.5;
+        gridBagConstraints.weighty = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        add(jPanel2, gridBagConstraints);
+        add(secondPanel, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -124,8 +131,8 @@ public class HistoryPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel secondPanel;
     // End of variables declaration//GEN-END:variables
 }
