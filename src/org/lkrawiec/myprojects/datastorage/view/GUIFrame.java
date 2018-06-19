@@ -34,9 +34,14 @@ public class GUIFrame extends javax.swing.JFrame {
         secondPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1000, 800));
+        setPreferredSize(new java.awt.Dimension(1000, 800));
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         firstPanel.setBorder(new javax.swing.border.MatteBorder(null));
+        firstPanel.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        firstPanel.setMinimumSize(new java.awt.Dimension(640, 480));
+        firstPanel.setPreferredSize(new java.awt.Dimension(640, 480));
         firstPanel.setLayout(new javax.swing.BoxLayout(firstPanel, javax.swing.BoxLayout.LINE_AXIS));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -47,6 +52,10 @@ public class GUIFrame extends javax.swing.JFrame {
         getContentPane().add(firstPanel, gridBagConstraints);
 
         secondPanel.setBorder(new javax.swing.border.MatteBorder(null));
+        secondPanel.setMaximumSize(new java.awt.Dimension(1920, 60));
+        secondPanel.setMinimumSize(new java.awt.Dimension(640, 60));
+        secondPanel.setName(""); // NOI18N
+        secondPanel.setPreferredSize(new java.awt.Dimension(640, 60));
         secondPanel.setLayout(new javax.swing.BoxLayout(secondPanel, javax.swing.BoxLayout.LINE_AXIS));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
