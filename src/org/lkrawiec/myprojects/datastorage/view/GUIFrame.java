@@ -72,80 +72,87 @@ public class GUIFrame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        GUIFrame frame = new GUIFrame();
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                //test
-                
-                frame.setFirstPanel(new ChangeFormPanel());
-                frame.setSecondPanel(new ButtonsPanel());
-                frame.setVisible(true);
-            }
-        });
-        
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        java.awt.EventQueue.invokeLater(() -> {
-            //test
-            
-            frame.setFirstPanel(new MainPanel());
-            frame.setSecondPanel(new ButtonsPanel());
-            frame.setVisible(true);
-        });
-        
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        java.awt.EventQueue.invokeLater(() -> {
-            //test
-            HistoryPanel hp = new HistoryPanel();
-            hp.setSecondPanel(new ChangeFormPanel());
-            frame.setFirstPanel(hp);
-            frame.setSecondPanel(new ButtonsPanel());
-            frame.setVisible(true);
-        });
-    }
-    
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//        //</editor-fold>
+//        GUIFrame frame = new GUIFrame();
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                //test
+//                
+//                frame.setFirstPanel(new ChangeFormPanel());
+//                frame.setSecondPanel(new ButtonsPanel());
+//                frame.setVisible(true);
+//            }
+//        });
+//        
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        
+//        java.awt.EventQueue.invokeLater(() -> {
+//            //test
+//            
+//            frame.setFirstPanel(new MainPanel());
+//            frame.setSecondPanel(new ButtonsPanel());
+//            frame.setVisible(true);
+//        });
+//        
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        
+//        java.awt.EventQueue.invokeLater(() -> {
+//            //test
+//            HistoryPanel hp = new HistoryPanel();
+//            hp.setSecondPanel(new ChangeFormPanel());
+//            frame.setFirstPanel(hp);
+//            frame.setSecondPanel(new ButtonsPanel());
+//            frame.setVisible(true);
+//        });
+//    }
     public void setFirstPanel(JPanel panel) {
         firstPanel.removeAll();
-        firstPanel.add(panel);
+        if (panel != null) {
+            firstPanel.add(panel);
+        }
     }
-    
+
     public void setSecondPanel(JPanel panel) {
         secondPanel.removeAll();
-        secondPanel.add(panel);
+        if (panel != null) {
+            secondPanel.add(panel);
+        }
+    }
+    
+    public void startGUI() {
+        setVisible(true);       
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

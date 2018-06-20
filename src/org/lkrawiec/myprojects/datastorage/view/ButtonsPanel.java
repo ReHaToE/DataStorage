@@ -18,6 +18,10 @@ public class ButtonsPanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    public void setSaveButtonVisible(boolean visible) {
+        saveButton.setVisible(visible);
+    } 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,12 +32,12 @@ public class ButtonsPanel extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jButton1 = new javax.swing.JButton();
+        saveButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setText("Save");
+        saveButton.setText("Save");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -41,7 +45,7 @@ public class ButtonsPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        add(jButton1, gridBagConstraints);
+        add(saveButton, gridBagConstraints);
 
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +68,7 @@ public class ButtonsPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton saveButton;
     // End of variables declaration//GEN-END:variables
 }
