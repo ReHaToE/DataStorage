@@ -11,6 +11,17 @@ package org.lkrawiec.myprojects.datastorage.view;
  */
 public class ButtonsPanel extends javax.swing.JPanel {
 
+    private Action saveAction;
+    private Action backAction;
+
+    public void setSaveAction(Action saveAction) {
+        this.saveAction = saveAction;
+    }
+
+    public void setBackAction(Action backAction) {
+        this.backAction = backAction;
+    }
+    
     /**
      * Creates new form ButtonsPanel
      */
@@ -33,11 +44,16 @@ public class ButtonsPanel extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         saveButton = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        backButton = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
         saveButton.setText("Save");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveButtonActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -47,10 +63,10 @@ public class ButtonsPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         add(saveButton, gridBagConstraints);
 
-        jButton2.setText("Back");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -60,16 +76,20 @@ public class ButtonsPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        add(jButton2, gridBagConstraints);
+        add(backButton, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        backAction.Do();
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+        saveAction.Do();
+    }//GEN-LAST:event_saveButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton backButton;
     private javax.swing.JButton saveButton;
     // End of variables declaration//GEN-END:variables
 }

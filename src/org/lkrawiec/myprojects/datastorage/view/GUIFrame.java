@@ -140,6 +140,9 @@ public class GUIFrame extends javax.swing.JFrame {
         firstPanel.removeAll();
         if (panel != null) {
             firstPanel.add(panel);
+            firstPanel.setVisible(true);
+        } else {
+            firstPanel.setVisible(false);
         }
     }
 
@@ -147,6 +150,9 @@ public class GUIFrame extends javax.swing.JFrame {
         secondPanel.removeAll();
         if (panel != null) {
             secondPanel.add(panel);
+            secondPanel.setVisible(true);
+        } else {
+            secondPanel.setVisible(false);
         }
     }
     

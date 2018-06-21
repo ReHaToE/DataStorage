@@ -6,6 +6,7 @@
 package org.lkrawiec.myprojects.datastorage.view;
 
 import java.awt.EventQueue;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -37,6 +38,10 @@ public class View {
     private final MainPanel mainPanel = new MainPanel();
     private State state = State.UNKNOWN;
 
+    public View() {
+        registerForEvents();
+    }
+
     public void makeVisible() {
         dispatchToUIThread(() -> {
             guiframe.startGUI();
@@ -48,6 +53,8 @@ public class View {
         dispatchToUIThread(() -> {
             guiframe.setFirstPanel(mainPanel);
             guiframe.setSecondPanel(null);
+            guiframe.revalidate();
+            guiframe.pack();
         });
         state = State.MENU;
     }
@@ -100,8 +107,53 @@ public class View {
     }
 
     private void dispatchToUIThread(Action a) {
+        if (EventQueue.isDispatchThread()) {
+//            System.out.println("in thread");
+            new Thread(() -> {
+                EventQueue.invokeLater(() -> {
+//                  System.out.println("out of thread");
+                    a.Do();
+                });
+            }).start();
+
+            return;
+        }
         EventQueue.invokeLater(() -> {
+//            System.out.println("out of thread");
             a.Do();
+        });
+//        SwingUtilities.invokeLater(()->{a.Do();});
+    }
+
+    private void registerForEvents() {
+        // buttons panel registartion
+        buttonsPanel.setBackAction(new Action() {
+            @Override
+            public void Do() {
+                switch (getState()) {
+                    case ADD_CHANGE:
+                    //FALLTHROUGH
+                    case HISTORY:
+                        showMenu();
+                        break;
+                    default:
+                }
+            }
+        });
+
+        // main menu registration
+        mainPanel.setAddChangeButtonAction(new Action() {
+            @Override
+            public void Do() {
+                showAddChangeUI();
+            }
+        });
+
+        mainPanel.setSearchCarButtonAction(new Action() {
+            @Override
+            public void Do() {
+                showHistoryUI();
+            }
         });
     }
 }

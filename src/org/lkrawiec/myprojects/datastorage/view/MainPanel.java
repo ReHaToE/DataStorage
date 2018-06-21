@@ -11,11 +11,22 @@ package org.lkrawiec.myprojects.datastorage.view;
  */
 public class MainPanel extends javax.swing.JPanel {
 
+    private Action addChangeButtonAction;
+    private Action searchCarButtonAction;
+
     /**
      * Creates new form MainPanel
      */
     public MainPanel() {
         initComponents();
+    }
+
+    public void setAddChangeButtonAction(Action addChangeButtonAction) {
+        this.addChangeButtonAction = addChangeButtonAction;
+    }
+
+    public void setSearchCarButtonAction(Action searchCarButtonAction) {
+        this.searchCarButtonAction = searchCarButtonAction;
     }
 
     /**
@@ -28,31 +39,49 @@ public class MainPanel extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        newChangeButton = new javax.swing.JButton();
+        searchCarButton = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setText("New Change");
+        newChangeButton.setText("New Change");
+        newChangeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newChangeButtonActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        add(jButton1, gridBagConstraints);
+        add(newChangeButton, gridBagConstraints);
 
-        jButton2.setText("Search Car");
+        searchCarButton.setText("Search Car");
+        searchCarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchCarButtonActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        add(jButton2, gridBagConstraints);
+        add(searchCarButton, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void newChangeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newChangeButtonActionPerformed
+        addChangeButtonAction.Do();
+    }//GEN-LAST:event_newChangeButtonActionPerformed
+
+    private void searchCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchCarButtonActionPerformed
+        searchCarButtonAction.Do();
+    }//GEN-LAST:event_searchCarButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton newChangeButton;
+    private javax.swing.JButton searchCarButton;
     // End of variables declaration//GEN-END:variables
 }
