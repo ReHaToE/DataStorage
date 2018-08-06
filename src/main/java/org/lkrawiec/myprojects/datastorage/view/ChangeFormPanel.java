@@ -5,6 +5,8 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import org.jdesktop.swingx.prompt.PromptSupport;
+
 /**
  *
  * @author lukii
@@ -16,6 +18,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
      */
     public ChangeFormPanel() {
         initComponents();
+        setPrompts();
     }
 
     /**
@@ -1345,5 +1348,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
 
     void fillWithData(View.AddChangeData data) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void setPrompts() {
+        PromptSupport.setPrompt("ex. Honda", jTextField5);
     }
 }
