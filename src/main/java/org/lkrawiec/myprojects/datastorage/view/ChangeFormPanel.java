@@ -1351,59 +1351,72 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     }
 
     private void setPrompts() {
-        PromptSupport.setPrompt("ex. Jan van Vliet", nameTextField);
-        PromptSupport.setPrompt("ex. Scheistraat 411", addressTextField);
-        PromptSupport.setPrompt("ex. 06 81923452", phoneNumberTextField);
-        PromptSupport.setPrompt("ex. JvV@live.nl", emailTextField);
+        PromptSupport.setPrompt(EX__JAN_VAN__VLIET, nameTextField);
+        PromptSupport.setPrompt(EX__SCHEISTRAAT_411, addressTextField);
+        PromptSupport.setPrompt(EX_06_81923452, phoneNumberTextField);
+        PromptSupport.setPrompt(EX__JV_VLIVENL, emailTextField);
         
-        PromptSupport.setPrompt("ex. Honda", brandTextField);
-        PromptSupport.setPrompt("ex. Civic", modelTextField);
-        PromptSupport.setPrompt("ex. 34-LGH-5", licensePlatesTextField);
-        PromptSupport.setPrompt("ex. 99999", mileageTextField);
+        PromptSupport.setPrompt(EX__HONDA, brandTextField);
+        PromptSupport.setPrompt(EX__CIVIC, modelTextField);
+        PromptSupport.setPrompt(EX_34LGH5, licensePlatesTextField);
+        PromptSupport.setPrompt(EX_99999, mileageTextField);
         
-        PromptSupport.setPrompt("ex. 185/65/14", leftFrontNewTiresSizeTextField);
-        PromptSupport.setPrompt("ex. 4.1", leftFrontNewTiresProfileTextField);
-        PromptSupport.setPrompt("ex. Continental", leftFrontNewTiresBrandTextField);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", leftFrontNewTiresModel);
-        PromptSupport.setPrompt("ex. 2.4", leftFrontNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, leftFrontNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, leftFrontNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontNewTiresModel);
+        PromptSupport.setPrompt(EX_24, leftFrontNewTiresPressure);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rightFrontNewTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rightFrontNewTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rightFrontNewTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rightFrontNewTiresModel);
-        PromptSupport.setPrompt("ex. 2.4", rightFrontNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rightFrontNewTiresSize);
+        PromptSupport.setPrompt(EX_41, rightFrontNewTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontNewTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontNewTiresModel);
+        PromptSupport.setPrompt(EX_24, rightFrontNewTiresPressure);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rearLeftNewTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rearLeftNewTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rearLeftNewTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rearLeftNewTiresModel);
-        PromptSupport.setPrompt("ex. 2.4", rearLeftNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rearLeftNewTiresSize);
+        PromptSupport.setPrompt(EX_41, rearLeftNewTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftNewTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftNewTiresModel);
+        PromptSupport.setPrompt(EX_24, rearLeftNewTiresPressure);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rearRightNewTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rearRightNewTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rearRightNewTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rearRightNewTiresModel);
-        PromptSupport.setPrompt("ex. 2.4", rearRightNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rearRightNewTiresSize);
+        PromptSupport.setPrompt(EX_41, rearRightNewTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightNewTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightNewTiresModel);
+        PromptSupport.setPrompt(EX_24, rearRightNewTiresPressure);
         
-        PromptSupport.setPrompt("ex. 185/65/14", leftFrontOldTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", leftFrontOldTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", leftFrontOldTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", leftFrontOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, leftFrontOldTiresSize);
+        PromptSupport.setPrompt(EX_41, leftFrontOldTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontOldTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontOldTiresModel);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rightFrontOldTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rightFrontOldTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rightFrontOldTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rightFrontOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rightFrontOldTiresSize);
+        PromptSupport.setPrompt(EX_41, rightFrontOldTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontOldTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontOldTiresModel);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rearLeftOldTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rearLeftOldTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rearLeftOldTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rearLeftOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rearLeftOldTiresSize);
+        PromptSupport.setPrompt(EX_41, rearLeftOldTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftOldTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftOldTiresModel);
         
-        PromptSupport.setPrompt("ex. 185/65/14", rearRightOldTiresSize);
-        PromptSupport.setPrompt("ex. 4.1", rearRightOldTiresProfile);
-        PromptSupport.setPrompt("ex. Continental", rearRightOldTiresBrand);
-        PromptSupport.setPrompt("ex. ContiEcoContact5", rearRightOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rearRightOldTiresSize);
+        PromptSupport.setPrompt(EX_41, rearRightOldTiresProfile);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightOldTiresBrand);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModel);
         
     }
+    private static final String EX_99999 = "ex. 99999";
+    private static final String EX_34LGH5 = "ex. 34-LGH-5";
+    private static final String EX__CIVIC = "ex. Civic";
+    private static final String EX__HONDA = "ex. Honda";
+    private static final String EX__JV_VLIVENL = "ex. JvV@live.nl";
+    private static final String EX_06_81923452 = "ex. 06 81923452";
+    private static final String EX__SCHEISTRAAT_411 = "ex. Scheistraat 411";
+    private static final String EX__JAN_VAN__VLIET = "ex. Jan van Vliet";
+    private static final String EX_24 = "ex. 2.4";
+    private static final String EX__CONTI_ECO_CONTACT5 = "ex. ContiEcoContact5";
+    private static final String EX_1856514 = "ex. 185/65/14";
+    private static final String EX_41 = "ex. 4.1";
+    private static final String EX__CONTINENTAL = "ex. Continental";
 }
