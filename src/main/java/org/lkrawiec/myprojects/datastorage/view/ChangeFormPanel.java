@@ -37,20 +37,20 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        nameTextField = new javax.swing.JTextField();
+        addressTextField = new javax.swing.JTextField();
+        phoneNumberTextField = new javax.swing.JTextField();
+        emailTextField = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        brandTextField = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        modelTextField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        licensePlatesTextField = new javax.swing.JTextField();
+        mileageTextField = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -60,18 +60,18 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel18 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
+        rightFrontNewTiresSize = new javax.swing.JTextField();
+        rightFrontNewTiresModel = new javax.swing.JTextField();
+        rightFrontNewTiresProfile = new javax.swing.JTextField();
+        rightFrontNewTiresBrand = new javax.swing.JTextField();
+        rightFrontNewTiresPressure = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField43 = new javax.swing.JTextField();
+        rearLeftNewTiresSize = new javax.swing.JTextField();
+        rearLeftNewTiresProfile = new javax.swing.JTextField();
+        rearLeftNewTiresBrand = new javax.swing.JTextField();
+        rearLeftNewTiresModel = new javax.swing.JTextField();
+        rearLeftNewTiresPressure = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -84,11 +84,11 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
-        jTextField49 = new javax.swing.JTextField();
-        jTextField50 = new javax.swing.JTextField();
-        jTextField51 = new javax.swing.JTextField();
-        jTextField52 = new javax.swing.JTextField();
-        jTextField53 = new javax.swing.JTextField();
+        leftFrontNewTiresSizeTextField = new javax.swing.JTextField();
+        leftFrontNewTiresModel = new javax.swing.JTextField();
+        leftFrontNewTiresProfileTextField = new javax.swing.JTextField();
+        leftFrontNewTiresBrandTextField = new javax.swing.JTextField();
+        leftFrontNewTiresPressure = new javax.swing.JTextField();
         jPanel13 = new javax.swing.JPanel();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
@@ -96,11 +96,11 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
-        jTextField54 = new javax.swing.JTextField();
-        jTextField59 = new javax.swing.JTextField();
-        jTextField60 = new javax.swing.JTextField();
-        jTextField61 = new javax.swing.JTextField();
-        jTextField62 = new javax.swing.JTextField();
+        rearRightNewTiresSize = new javax.swing.JTextField();
+        rearRightNewTiresModel = new javax.swing.JTextField();
+        rearRightNewTiresProfile = new javax.swing.JTextField();
+        rearRightNewTiresBrand = new javax.swing.JTextField();
+        rearRightNewTiresPressure = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jLabel39 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
@@ -109,16 +109,16 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
-        jTextField45 = new javax.swing.JTextField();
-        jTextField46 = new javax.swing.JTextField();
-        jTextField47 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
+        leftFrontOldTiresSize = new javax.swing.JTextField();
+        leftFrontOldTiresModel = new javax.swing.JTextField();
+        leftFrontOldTiresProfile = new javax.swing.JTextField();
+        leftFrontOldTiresBrand = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
-        jTextField55 = new javax.swing.JTextField();
-        jTextField56 = new javax.swing.JTextField();
-        jTextField57 = new javax.swing.JTextField();
-        jTextField58 = new javax.swing.JTextField();
+        rearLeftOldTiresSize = new javax.swing.JTextField();
+        rearLeftOldTiresProfile = new javax.swing.JTextField();
+        rearLeftOldTiresBrand = new javax.swing.JTextField();
+        rearLeftOldTiresModel = new javax.swing.JTextField();
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
@@ -129,20 +129,20 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
-        jTextField63 = new javax.swing.JTextField();
-        jTextField64 = new javax.swing.JTextField();
-        jTextField66 = new javax.swing.JTextField();
-        jTextField65 = new javax.swing.JTextField();
+        rearRightOldTiresProfile = new javax.swing.JTextField();
+        rearRightOldTiresModel = new javax.swing.JTextField();
+        rearRightOldTiresBrand = new javax.swing.JTextField();
+        rearRightOldTiresSize = new javax.swing.JTextField();
         jPanel15 = new javax.swing.JPanel();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
-        jTextField68 = new javax.swing.JTextField();
-        jTextField69 = new javax.swing.JTextField();
-        jTextField70 = new javax.swing.JTextField();
-        jTextField71 = new javax.swing.JTextField();
+        rightFrontOldTiresSize = new javax.swing.JTextField();
+        rightFrontOldTiresModel = new javax.swing.JTextField();
+        rightFrontOldTiresProfile = new javax.swing.JTextField();
+        rightFrontOldTiresBrand = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel67 = new javax.swing.JLabel();
 
@@ -197,9 +197,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 1.0;
         jPanel1.add(jLabel8, gridBagConstraints);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        nameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                nameTextFieldActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -209,7 +209,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel1.add(jTextField1, gridBagConstraints);
+        jPanel1.add(nameTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -217,7 +217,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel1.add(jTextField2, gridBagConstraints);
+        jPanel1.add(addressTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
@@ -225,7 +225,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel1.add(jTextField3, gridBagConstraints);
+        jPanel1.add(phoneNumberTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 8;
@@ -233,7 +233,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel1.add(jTextField4, gridBagConstraints);
+        jPanel1.add(emailTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -267,9 +267,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         jPanel2.add(jLabel9, gridBagConstraints);
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        brandTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                brandTextFieldActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -279,7 +279,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel2.add(jTextField5, gridBagConstraints);
+        jPanel2.add(brandTextField, gridBagConstraints);
 
         jLabel10.setText("Model");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -296,7 +296,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel2.add(jTextField6, gridBagConstraints);
+        jPanel2.add(modelTextField, gridBagConstraints);
 
         jLabel11.setText("License Plates");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -322,7 +322,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel2.add(jTextField7, gridBagConstraints);
+        jPanel2.add(licensePlatesTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
@@ -330,7 +330,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        jPanel2.add(jTextField8, gridBagConstraints);
+        jPanel2.add(mileageTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -415,7 +415,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(jTextField9, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -423,7 +423,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(jTextField10, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -431,7 +431,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(jTextField11, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -439,7 +439,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(jTextField12, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresBrand, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -447,7 +447,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(jTextField41, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresPressure, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -477,7 +477,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(jTextField13, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -485,7 +485,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(jTextField14, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -493,7 +493,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(jTextField15, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresBrand, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -501,7 +501,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(jTextField16, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -509,7 +509,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(jTextField43, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresPressure, gridBagConstraints);
 
         jLabel21.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -630,7 +630,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(jTextField49, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -638,11 +638,11 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(jTextField50, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresModel, gridBagConstraints);
 
-        jTextField51.addActionListener(new java.awt.event.ActionListener() {
+        leftFrontNewTiresProfileTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField51ActionPerformed(evt);
+                leftFrontNewTiresProfileTextFieldActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -652,7 +652,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(jTextField51, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -660,7 +660,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(jTextField52, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -668,7 +668,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(jTextField53, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresPressure, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -744,7 +744,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(jTextField54, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -752,7 +752,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(jTextField59, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -760,7 +760,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(jTextField60, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -768,7 +768,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(jTextField61, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresBrand, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -776,7 +776,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(jTextField62, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresPressure, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -863,7 +863,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(jTextField45, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -871,7 +871,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(jTextField46, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -879,7 +879,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(jTextField47, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -887,7 +887,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(jTextField48, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresBrand, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -917,7 +917,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(jTextField55, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -925,7 +925,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(jTextField56, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -933,7 +933,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(jTextField57, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresBrand, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -941,7 +941,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(jTextField58, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresModel, gridBagConstraints);
 
         jLabel48.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1046,7 +1046,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(jTextField63, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -1054,7 +1054,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(jTextField64, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -1062,7 +1062,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(jTextField66, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresBrand, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -1070,7 +1070,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(jTextField65, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresSize, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1138,7 +1138,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(jTextField68, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresSize, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -1146,7 +1146,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(jTextField69, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresModel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -1154,7 +1154,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(jTextField70, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresProfile, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -1162,7 +1162,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(jTextField71, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresBrand, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1208,24 +1208,27 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         add(jPanel9, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void nameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_nameTextFieldActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void brandTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_brandTextFieldActionPerformed
 
-    private void jTextField51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField51ActionPerformed
+    private void leftFrontNewTiresProfileTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftFrontNewTiresProfileTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField51ActionPerformed
+    }//GEN-LAST:event_leftFrontNewTiresProfileTextFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addressTextField;
+    private javax.swing.JTextField brandTextField;
+    private javax.swing.JTextField emailTextField;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1296,50 +1299,47 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField47;
-    private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField55;
-    private javax.swing.JTextField jTextField56;
-    private javax.swing.JTextField jTextField57;
-    private javax.swing.JTextField jTextField58;
-    private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField60;
-    private javax.swing.JTextField jTextField61;
-    private javax.swing.JTextField jTextField62;
-    private javax.swing.JTextField jTextField63;
-    private javax.swing.JTextField jTextField64;
-    private javax.swing.JTextField jTextField65;
-    private javax.swing.JTextField jTextField66;
-    private javax.swing.JTextField jTextField68;
-    private javax.swing.JTextField jTextField69;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField70;
-    private javax.swing.JTextField jTextField71;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField leftFrontNewTiresBrandTextField;
+    private javax.swing.JTextField leftFrontNewTiresModel;
+    private javax.swing.JTextField leftFrontNewTiresPressure;
+    private javax.swing.JTextField leftFrontNewTiresProfileTextField;
+    private javax.swing.JTextField leftFrontNewTiresSizeTextField;
+    private javax.swing.JTextField leftFrontOldTiresBrand;
+    private javax.swing.JTextField leftFrontOldTiresModel;
+    private javax.swing.JTextField leftFrontOldTiresProfile;
+    private javax.swing.JTextField leftFrontOldTiresSize;
+    private javax.swing.JTextField licensePlatesTextField;
+    private javax.swing.JTextField mileageTextField;
+    private javax.swing.JTextField modelTextField;
+    private javax.swing.JTextField nameTextField;
+    private javax.swing.JTextField phoneNumberTextField;
+    private javax.swing.JTextField rearLeftNewTiresBrand;
+    private javax.swing.JTextField rearLeftNewTiresModel;
+    private javax.swing.JTextField rearLeftNewTiresPressure;
+    private javax.swing.JTextField rearLeftNewTiresProfile;
+    private javax.swing.JTextField rearLeftNewTiresSize;
+    private javax.swing.JTextField rearLeftOldTiresBrand;
+    private javax.swing.JTextField rearLeftOldTiresModel;
+    private javax.swing.JTextField rearLeftOldTiresProfile;
+    private javax.swing.JTextField rearLeftOldTiresSize;
+    private javax.swing.JTextField rearRightNewTiresBrand;
+    private javax.swing.JTextField rearRightNewTiresModel;
+    private javax.swing.JTextField rearRightNewTiresPressure;
+    private javax.swing.JTextField rearRightNewTiresProfile;
+    private javax.swing.JTextField rearRightNewTiresSize;
+    private javax.swing.JTextField rearRightOldTiresBrand;
+    private javax.swing.JTextField rearRightOldTiresModel;
+    private javax.swing.JTextField rearRightOldTiresProfile;
+    private javax.swing.JTextField rearRightOldTiresSize;
+    private javax.swing.JTextField rightFrontNewTiresBrand;
+    private javax.swing.JTextField rightFrontNewTiresModel;
+    private javax.swing.JTextField rightFrontNewTiresPressure;
+    private javax.swing.JTextField rightFrontNewTiresProfile;
+    private javax.swing.JTextField rightFrontNewTiresSize;
+    private javax.swing.JTextField rightFrontOldTiresBrand;
+    private javax.swing.JTextField rightFrontOldTiresModel;
+    private javax.swing.JTextField rightFrontOldTiresProfile;
+    private javax.swing.JTextField rightFrontOldTiresSize;
     // End of variables declaration//GEN-END:variables
 
     View.AddChangeData getAddChangeData() {
@@ -1351,6 +1351,59 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     }
 
     private void setPrompts() {
-        PromptSupport.setPrompt("ex. Honda", jTextField5);
+        PromptSupport.setPrompt("ex. Jan van Vliet", nameTextField);
+        PromptSupport.setPrompt("ex. Scheistraat 411", addressTextField);
+        PromptSupport.setPrompt("ex. 06 81923452", phoneNumberTextField);
+        PromptSupport.setPrompt("ex. JvV@live.nl", emailTextField);
+        
+        PromptSupport.setPrompt("ex. Honda", brandTextField);
+        PromptSupport.setPrompt("ex. Civic", modelTextField);
+        PromptSupport.setPrompt("ex. 34-LGH-5", licensePlatesTextField);
+        PromptSupport.setPrompt("ex. 99999", mileageTextField);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", leftFrontNewTiresSizeTextField);
+        PromptSupport.setPrompt("ex. 4.1", leftFrontNewTiresProfileTextField);
+        PromptSupport.setPrompt("ex. Continental", leftFrontNewTiresBrandTextField);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", leftFrontNewTiresModel);
+        PromptSupport.setPrompt("ex. 2.4", leftFrontNewTiresPressure);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rightFrontNewTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rightFrontNewTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rightFrontNewTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rightFrontNewTiresModel);
+        PromptSupport.setPrompt("ex. 2.4", rightFrontNewTiresPressure);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rearLeftNewTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rearLeftNewTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rearLeftNewTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rearLeftNewTiresModel);
+        PromptSupport.setPrompt("ex. 2.4", rearLeftNewTiresPressure);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rearRightNewTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rearRightNewTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rearRightNewTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rearRightNewTiresModel);
+        PromptSupport.setPrompt("ex. 2.4", rearRightNewTiresPressure);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", leftFrontOldTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", leftFrontOldTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", leftFrontOldTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", leftFrontOldTiresModel);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rightFrontOldTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rightFrontOldTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rightFrontOldTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rightFrontOldTiresModel);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rearLeftOldTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rearLeftOldTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rearLeftOldTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rearLeftOldTiresModel);
+        
+        PromptSupport.setPrompt("ex. 185/65/14", rearRightOldTiresSize);
+        PromptSupport.setPrompt("ex. 4.1", rearRightOldTiresProfile);
+        PromptSupport.setPrompt("ex. Continental", rearRightOldTiresBrand);
+        PromptSupport.setPrompt("ex. ContiEcoContact5", rearRightOldTiresModel);
+        
     }
 }
