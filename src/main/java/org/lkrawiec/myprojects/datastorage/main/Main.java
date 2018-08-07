@@ -13,7 +13,9 @@ import org.lkrawiec.myprojects.datastorage.view.View;
  */
 public class Main {
     public static void main(String[] args) {
-        test4();
+        View view = new View();
+        view.showMenu();
+        view.makeVisible();
     }
 
     private static void test1() {

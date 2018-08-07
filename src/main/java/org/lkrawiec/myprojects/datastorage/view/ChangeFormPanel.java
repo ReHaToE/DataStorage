@@ -196,12 +196,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 1.0;
         jPanel1.add(jLabel8, gridBagConstraints);
-
-        nameTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameTextFieldActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -266,12 +260,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         jPanel2.add(jLabel9, gridBagConstraints);
-
-        brandTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brandTextFieldActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -639,12 +627,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
         jPanel11.add(leftFrontNewTiresModelTextField, gridBagConstraints);
-
-        leftFrontNewTiresProfileTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                leftFrontNewTiresProfileTextFieldActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -1173,12 +1155,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 10);
         jPanel9.add(jPanel15, gridBagConstraints);
-
-        storeOldTiresCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                storeOldTiresCheckBoxActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -1207,22 +1183,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         add(jPanel9, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void nameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nameTextFieldActionPerformed
-
-    private void storeOldTiresCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storeOldTiresCheckBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_storeOldTiresCheckBoxActionPerformed
-
-    private void brandTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_brandTextFieldActionPerformed
-
-    private void leftFrontNewTiresProfileTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftFrontNewTiresProfileTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_leftFrontNewTiresProfileTextFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
