@@ -60,18 +60,18 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel18 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        rightFrontNewTiresSize = new javax.swing.JTextField();
-        rightFrontNewTiresModel = new javax.swing.JTextField();
-        rightFrontNewTiresProfile = new javax.swing.JTextField();
-        rightFrontNewTiresBrand = new javax.swing.JTextField();
-        rightFrontNewTiresPressure = new javax.swing.JTextField();
+        rightFrontNewTiresSizeTextField = new javax.swing.JTextField();
+        rightFrontNewTiresModelTextField = new javax.swing.JTextField();
+        rightFrontNewTiresProfileTextField = new javax.swing.JTextField();
+        rightFrontNewTiresBrandTextField = new javax.swing.JTextField();
+        rightFrontNewTiresPressureTextField = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
-        rearLeftNewTiresSize = new javax.swing.JTextField();
-        rearLeftNewTiresProfile = new javax.swing.JTextField();
-        rearLeftNewTiresBrand = new javax.swing.JTextField();
-        rearLeftNewTiresModel = new javax.swing.JTextField();
-        rearLeftNewTiresPressure = new javax.swing.JTextField();
+        rearLeftNewTiresSizeTextField = new javax.swing.JTextField();
+        rearLeftNewTiresProfileTextField = new javax.swing.JTextField();
+        rearLeftNewTiresBrandTextField = new javax.swing.JTextField();
+        rearLeftNewTiresModelTextField = new javax.swing.JTextField();
+        rearLeftNewTiresPressureTextField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -85,10 +85,10 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         leftFrontNewTiresSizeTextField = new javax.swing.JTextField();
-        leftFrontNewTiresModel = new javax.swing.JTextField();
+        leftFrontNewTiresModelTextField = new javax.swing.JTextField();
         leftFrontNewTiresProfileTextField = new javax.swing.JTextField();
         leftFrontNewTiresBrandTextField = new javax.swing.JTextField();
-        leftFrontNewTiresPressure = new javax.swing.JTextField();
+        leftFrontNewTiresPressureTextField = new javax.swing.JTextField();
         jPanel13 = new javax.swing.JPanel();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
@@ -96,11 +96,11 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
-        rearRightNewTiresSize = new javax.swing.JTextField();
-        rearRightNewTiresModel = new javax.swing.JTextField();
-        rearRightNewTiresProfile = new javax.swing.JTextField();
-        rearRightNewTiresBrand = new javax.swing.JTextField();
-        rearRightNewTiresPressure = new javax.swing.JTextField();
+        rearRightNewTiresSizeTextField = new javax.swing.JTextField();
+        rearRightNewTiresModelTextField = new javax.swing.JTextField();
+        rearRightNewTiresProfileTextField = new javax.swing.JTextField();
+        rearRightNewTiresBrandTextField = new javax.swing.JTextField();
+        rearRightNewTiresPressureTextField = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jLabel39 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
@@ -109,16 +109,16 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
-        leftFrontOldTiresSize = new javax.swing.JTextField();
-        leftFrontOldTiresModel = new javax.swing.JTextField();
-        leftFrontOldTiresProfile = new javax.swing.JTextField();
-        leftFrontOldTiresBrand = new javax.swing.JTextField();
+        leftFrontOldTiresSizeTextField = new javax.swing.JTextField();
+        leftFrontOldTiresModelTextField = new javax.swing.JTextField();
+        leftFrontOldTiresProfileTextField = new javax.swing.JTextField();
+        leftFrontOldTiresBrandTextField = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
-        rearLeftOldTiresSize = new javax.swing.JTextField();
-        rearLeftOldTiresProfile = new javax.swing.JTextField();
-        rearLeftOldTiresBrand = new javax.swing.JTextField();
-        rearLeftOldTiresModel = new javax.swing.JTextField();
+        rearLeftOldTiresSizeTextField = new javax.swing.JTextField();
+        rearLeftOldTiresProfileTextField = new javax.swing.JTextField();
+        rearLeftOldTiresBrandTextField = new javax.swing.JTextField();
+        rearLeftOldTiresModelTextField = new javax.swing.JTextField();
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
@@ -129,21 +129,21 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
-        rearRightOldTiresProfile = new javax.swing.JTextField();
-        rearRightOldTiresModel = new javax.swing.JTextField();
-        rearRightOldTiresBrand = new javax.swing.JTextField();
-        rearRightOldTiresSize = new javax.swing.JTextField();
+        rearRightOldTiresProfileTextField = new javax.swing.JTextField();
+        rearRightOldTiresModelTextField = new javax.swing.JTextField();
+        rearRightOldTiresBrandTextField = new javax.swing.JTextField();
+        rearRightOldTiresSizeTextField = new javax.swing.JTextField();
         jPanel15 = new javax.swing.JPanel();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
-        rightFrontOldTiresSize = new javax.swing.JTextField();
-        rightFrontOldTiresModel = new javax.swing.JTextField();
-        rightFrontOldTiresProfile = new javax.swing.JTextField();
-        rightFrontOldTiresBrand = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        rightFrontOldTiresSizeTextField = new javax.swing.JTextField();
+        rightFrontOldTiresModelTextField = new javax.swing.JTextField();
+        rightFrontOldTiresProfileTextField = new javax.swing.JTextField();
+        rightFrontOldTiresBrandTextField = new javax.swing.JTextField();
+        storeOldTiresCheckBox = new javax.swing.JCheckBox();
         jLabel67 = new javax.swing.JLabel();
 
         setLayout(new java.awt.GridBagLayout());
@@ -415,7 +415,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(rightFrontNewTiresSize, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -423,7 +423,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(rightFrontNewTiresModel, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -431,7 +431,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(rightFrontNewTiresProfile, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -439,7 +439,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(rightFrontNewTiresBrand, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -447,7 +447,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel5.add(rightFrontNewTiresPressure, gridBagConstraints);
+        jPanel5.add(rightFrontNewTiresPressureTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -477,7 +477,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(rearLeftNewTiresSize, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -485,7 +485,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(rearLeftNewTiresProfile, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -493,7 +493,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(rearLeftNewTiresBrand, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -501,7 +501,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(rearLeftNewTiresModel, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -509,7 +509,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel7.add(rearLeftNewTiresPressure, gridBagConstraints);
+        jPanel7.add(rearLeftNewTiresPressureTextField, gridBagConstraints);
 
         jLabel21.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -638,7 +638,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(leftFrontNewTiresModel, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresModelTextField, gridBagConstraints);
 
         leftFrontNewTiresProfileTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -668,7 +668,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel11.add(leftFrontNewTiresPressure, gridBagConstraints);
+        jPanel11.add(leftFrontNewTiresPressureTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -744,7 +744,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(rearRightNewTiresSize, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -752,7 +752,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(rearRightNewTiresModel, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -760,7 +760,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(rearRightNewTiresProfile, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -768,7 +768,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(rearRightNewTiresBrand, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -776,7 +776,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel13.add(rearRightNewTiresPressure, gridBagConstraints);
+        jPanel13.add(rearRightNewTiresPressureTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -863,7 +863,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(leftFrontOldTiresSize, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -871,7 +871,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(leftFrontOldTiresModel, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -879,7 +879,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(leftFrontOldTiresProfile, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -887,7 +887,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel10.add(leftFrontOldTiresBrand, gridBagConstraints);
+        jPanel10.add(leftFrontOldTiresBrandTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -917,7 +917,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(rearLeftOldTiresSize, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -925,7 +925,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(rearLeftOldTiresProfile, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -933,7 +933,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(rearLeftOldTiresBrand, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -941,7 +941,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel12.add(rearLeftOldTiresModel, gridBagConstraints);
+        jPanel12.add(rearLeftOldTiresModelTextField, gridBagConstraints);
 
         jLabel48.setText("Size");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1046,7 +1046,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(rearRightOldTiresProfile, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -1054,7 +1054,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(rearRightOldTiresModel, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -1062,7 +1062,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(rearRightOldTiresBrand, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresBrandTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -1070,7 +1070,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel14.add(rearRightOldTiresSize, gridBagConstraints);
+        jPanel14.add(rearRightOldTiresSizeTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1138,7 +1138,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(rightFrontOldTiresSize, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresSizeTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -1146,7 +1146,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(rightFrontOldTiresModel, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresModelTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -1154,7 +1154,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(rightFrontOldTiresProfile, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresProfileTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -1162,7 +1162,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel15.add(rightFrontOldTiresBrand, gridBagConstraints);
+        jPanel15.add(rightFrontOldTiresBrandTextField, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1174,9 +1174,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 10);
         jPanel9.add(jPanel15, gridBagConstraints);
 
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        storeOldTiresCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                storeOldTiresCheckBoxActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1185,7 +1185,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
-        jPanel9.add(jCheckBox1, gridBagConstraints);
+        jPanel9.add(storeOldTiresCheckBox, gridBagConstraints);
 
         jLabel67.setText("Store old tires?");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1212,9 +1212,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_nameTextFieldActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void storeOldTiresCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storeOldTiresCheckBoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_storeOldTiresCheckBoxActionPerformed
 
     private void brandTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandTextFieldActionPerformed
         // TODO add your handling code here:
@@ -1229,7 +1229,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private javax.swing.JTextField addressTextField;
     private javax.swing.JTextField brandTextField;
     private javax.swing.JTextField emailTextField;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1300,50 +1299,108 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField leftFrontNewTiresBrandTextField;
-    private javax.swing.JTextField leftFrontNewTiresModel;
-    private javax.swing.JTextField leftFrontNewTiresPressure;
+    private javax.swing.JTextField leftFrontNewTiresModelTextField;
+    private javax.swing.JTextField leftFrontNewTiresPressureTextField;
     private javax.swing.JTextField leftFrontNewTiresProfileTextField;
     private javax.swing.JTextField leftFrontNewTiresSizeTextField;
-    private javax.swing.JTextField leftFrontOldTiresBrand;
-    private javax.swing.JTextField leftFrontOldTiresModel;
-    private javax.swing.JTextField leftFrontOldTiresProfile;
-    private javax.swing.JTextField leftFrontOldTiresSize;
+    private javax.swing.JTextField leftFrontOldTiresBrandTextField;
+    private javax.swing.JTextField leftFrontOldTiresModelTextField;
+    private javax.swing.JTextField leftFrontOldTiresProfileTextField;
+    private javax.swing.JTextField leftFrontOldTiresSizeTextField;
     private javax.swing.JTextField licensePlatesTextField;
     private javax.swing.JTextField mileageTextField;
     private javax.swing.JTextField modelTextField;
     private javax.swing.JTextField nameTextField;
     private javax.swing.JTextField phoneNumberTextField;
-    private javax.swing.JTextField rearLeftNewTiresBrand;
-    private javax.swing.JTextField rearLeftNewTiresModel;
-    private javax.swing.JTextField rearLeftNewTiresPressure;
-    private javax.swing.JTextField rearLeftNewTiresProfile;
-    private javax.swing.JTextField rearLeftNewTiresSize;
-    private javax.swing.JTextField rearLeftOldTiresBrand;
-    private javax.swing.JTextField rearLeftOldTiresModel;
-    private javax.swing.JTextField rearLeftOldTiresProfile;
-    private javax.swing.JTextField rearLeftOldTiresSize;
-    private javax.swing.JTextField rearRightNewTiresBrand;
-    private javax.swing.JTextField rearRightNewTiresModel;
-    private javax.swing.JTextField rearRightNewTiresPressure;
-    private javax.swing.JTextField rearRightNewTiresProfile;
-    private javax.swing.JTextField rearRightNewTiresSize;
-    private javax.swing.JTextField rearRightOldTiresBrand;
-    private javax.swing.JTextField rearRightOldTiresModel;
-    private javax.swing.JTextField rearRightOldTiresProfile;
-    private javax.swing.JTextField rearRightOldTiresSize;
-    private javax.swing.JTextField rightFrontNewTiresBrand;
-    private javax.swing.JTextField rightFrontNewTiresModel;
-    private javax.swing.JTextField rightFrontNewTiresPressure;
-    private javax.swing.JTextField rightFrontNewTiresProfile;
-    private javax.swing.JTextField rightFrontNewTiresSize;
-    private javax.swing.JTextField rightFrontOldTiresBrand;
-    private javax.swing.JTextField rightFrontOldTiresModel;
-    private javax.swing.JTextField rightFrontOldTiresProfile;
-    private javax.swing.JTextField rightFrontOldTiresSize;
+    private javax.swing.JTextField rearLeftNewTiresBrandTextField;
+    private javax.swing.JTextField rearLeftNewTiresModelTextField;
+    private javax.swing.JTextField rearLeftNewTiresPressureTextField;
+    private javax.swing.JTextField rearLeftNewTiresProfileTextField;
+    private javax.swing.JTextField rearLeftNewTiresSizeTextField;
+    private javax.swing.JTextField rearLeftOldTiresBrandTextField;
+    private javax.swing.JTextField rearLeftOldTiresModelTextField;
+    private javax.swing.JTextField rearLeftOldTiresProfileTextField;
+    private javax.swing.JTextField rearLeftOldTiresSizeTextField;
+    private javax.swing.JTextField rearRightNewTiresBrandTextField;
+    private javax.swing.JTextField rearRightNewTiresModelTextField;
+    private javax.swing.JTextField rearRightNewTiresPressureTextField;
+    private javax.swing.JTextField rearRightNewTiresProfileTextField;
+    private javax.swing.JTextField rearRightNewTiresSizeTextField;
+    private javax.swing.JTextField rearRightOldTiresBrandTextField;
+    private javax.swing.JTextField rearRightOldTiresModelTextField;
+    private javax.swing.JTextField rearRightOldTiresProfileTextField;
+    private javax.swing.JTextField rearRightOldTiresSizeTextField;
+    private javax.swing.JTextField rightFrontNewTiresBrandTextField;
+    private javax.swing.JTextField rightFrontNewTiresModelTextField;
+    private javax.swing.JTextField rightFrontNewTiresPressureTextField;
+    private javax.swing.JTextField rightFrontNewTiresProfileTextField;
+    private javax.swing.JTextField rightFrontNewTiresSizeTextField;
+    private javax.swing.JTextField rightFrontOldTiresBrandTextField;
+    private javax.swing.JTextField rightFrontOldTiresModelTextField;
+    private javax.swing.JTextField rightFrontOldTiresProfileTextField;
+    private javax.swing.JTextField rightFrontOldTiresSizeTextField;
+    private javax.swing.JCheckBox storeOldTiresCheckBox;
     // End of variables declaration//GEN-END:variables
 
     View.AddChangeData getAddChangeData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        View.AddChangeData addChangeData = new View.AddChangeData();
+        addChangeData.name = nameTextField.getText();
+        addChangeData.address = addressTextField.getText();
+        addChangeData.phoneNumber = phoneNumberTextField.getText();
+        addChangeData.email = emailTextField.getText();
+        
+        addChangeData.carBrand = brandTextField.getText();
+        addChangeData.carModel = modelTextField.getText();
+        addChangeData.carLicensePlates = licensePlatesTextField.getText();
+        addChangeData.carMileage = mileageTextField.getText();
+        
+        addChangeData.leftFrontNewTiresSize = leftFrontNewTiresSizeTextField.getText();
+        addChangeData.leftFrontNewTiresProfile = leftFrontNewTiresProfileTextField.getText();
+        addChangeData.leftFrontNewTiresBrand = leftFrontNewTiresBrandTextField.getText();
+        addChangeData.leftFrontNewTiresModel = leftFrontNewTiresModelTextField.getText();
+        addChangeData.leftFrontNewTiresPressure = leftFrontNewTiresPressureTextField.getText();
+        
+        addChangeData.rightFrontNewTiresSize = rightFrontNewTiresSizeTextField.getText();
+        addChangeData.rightFrontNewTiresProfile = rightFrontNewTiresProfileTextField.getText();
+        addChangeData.rightFrontNewTiresBrand = rightFrontNewTiresBrandTextField.getText();
+        addChangeData.rightFrontNewTiresModel = rightFrontNewTiresModelTextField.getText();
+        addChangeData.rightFrontNewTiresPressure = rightFrontNewTiresPressureTextField.getText();
+        
+        addChangeData.rearLeftNewTiresSize = rearLeftNewTiresSizeTextField.getText();
+        addChangeData.rearLeftNewTiresProfile = rearLeftNewTiresProfileTextField.getText();
+        addChangeData.rearLeftNewTiresBrand = rearLeftNewTiresBrandTextField.getText();
+        addChangeData.rearLeftNewTiresModel = rearLeftNewTiresModelTextField.getText();
+        addChangeData.rearLeftNewTiresPressure = rearLeftNewTiresPressureTextField.getText();
+        
+        addChangeData.rearRightNewTiresSize = rearRightNewTiresSizeTextField.getText();
+        addChangeData.rearRightNewTiresProfile = rearRightNewTiresProfileTextField.getText();
+        addChangeData.rearRightNewTiresBrand = rearRightNewTiresBrandTextField.getText();
+        addChangeData.rearRightNewTiresModel = rearRightNewTiresModelTextField.getText();
+        addChangeData.rearRightNewTiresPressure = rearRightNewTiresPressureTextField.getText();
+        
+        addChangeData.leftFrontOldTiresSize = leftFrontOldTiresSizeTextField.getText();
+        addChangeData.leftFrontOldTiresProfile = leftFrontOldTiresProfileTextField.getText();
+        addChangeData.leftFrontOldTiresBrand = leftFrontOldTiresBrandTextField.getText();
+        addChangeData.leftFrontOldTiresModel = leftFrontOldTiresModelTextField.getText();
+        
+        addChangeData.rightFrontOldTiresSize = rightFrontOldTiresSizeTextField.getText();
+        addChangeData.rightFrontOldTiresProfile = rightFrontOldTiresProfileTextField.getText();
+        addChangeData.rightFrontOldTiresBrand = rightFrontOldTiresBrandTextField.getText();
+        addChangeData.rightFrontOldTiresModel = rightFrontOldTiresModelTextField.getText();
+        
+        addChangeData.rearLeftOldTiresSize = rearLeftOldTiresSizeTextField.getText();
+        addChangeData.rearLeftOldTiresProfile = rearLeftOldTiresProfileTextField.getText();
+        addChangeData.rearLeftOldTiresBrand = rearLeftOldTiresBrandTextField.getText();
+        addChangeData.rearLeftOldTiresModel = rearLeftOldTiresModelTextField.getText();
+        
+        addChangeData.rearRightOldTiresSize = rearRightOldTiresSizeTextField.getText();
+        addChangeData.rearRightOldTiresProfile = rearRightOldTiresProfileTextField.getText();
+        addChangeData.rearRightOldTiresBrand = rearRightOldTiresBrandTextField.getText();
+        addChangeData.rearRightOldTiresModel = rearRightOldTiresModelTextField.getText();
+        
+        addChangeData.storeOldTires = storeOldTiresCheckBox.isSelected();
+
+        return addChangeData;
     }
 
     void fillWithData(View.AddChangeData data) {
@@ -1364,46 +1421,46 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         PromptSupport.setPrompt(EX_1856514, leftFrontNewTiresSizeTextField);
         PromptSupport.setPrompt(EX_41, leftFrontNewTiresProfileTextField);
         PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontNewTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontNewTiresModel);
-        PromptSupport.setPrompt(EX_24, leftFrontNewTiresPressure);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, leftFrontNewTiresPressureTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rightFrontNewTiresSize);
-        PromptSupport.setPrompt(EX_41, rightFrontNewTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontNewTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontNewTiresModel);
-        PromptSupport.setPrompt(EX_24, rightFrontNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rightFrontNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rightFrontNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rightFrontNewTiresPressureTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rearLeftNewTiresSize);
-        PromptSupport.setPrompt(EX_41, rearLeftNewTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftNewTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftNewTiresModel);
-        PromptSupport.setPrompt(EX_24, rearLeftNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rearLeftNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearLeftNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rearLeftNewTiresPressureTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rearRightNewTiresSize);
-        PromptSupport.setPrompt(EX_41, rearRightNewTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightNewTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightNewTiresModel);
-        PromptSupport.setPrompt(EX_24, rearRightNewTiresPressure);
+        PromptSupport.setPrompt(EX_1856514, rearRightNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearRightNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rearRightNewTiresPressureTextField);
         
-        PromptSupport.setPrompt(EX_1856514, leftFrontOldTiresSize);
-        PromptSupport.setPrompt(EX_41, leftFrontOldTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontOldTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, leftFrontOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, leftFrontOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontOldTiresModelTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rightFrontOldTiresSize);
-        PromptSupport.setPrompt(EX_41, rightFrontOldTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontOldTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rightFrontOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rightFrontOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontOldTiresModelTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rearLeftOldTiresSize);
-        PromptSupport.setPrompt(EX_41, rearLeftOldTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftOldTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rearLeftOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearLeftOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftOldTiresModelTextField);
         
-        PromptSupport.setPrompt(EX_1856514, rearRightOldTiresSize);
-        PromptSupport.setPrompt(EX_41, rearRightOldTiresProfile);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightOldTiresBrand);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModel);
+        PromptSupport.setPrompt(EX_1856514, rearRightOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearRightOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModelTextField);
         
     }
     private static final String EX_99999 = "ex. 99999";
