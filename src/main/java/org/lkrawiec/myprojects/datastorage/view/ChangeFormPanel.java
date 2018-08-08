@@ -5,6 +5,7 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 import org.jdesktop.swingx.prompt.PromptSupport;
 
 /**
@@ -1302,8 +1303,8 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private javax.swing.JCheckBox storeOldTiresCheckBox;
     // End of variables declaration//GEN-END:variables
 
-    public View.AddChangeData getAddChangeData() {
-        View.AddChangeData addChangeData = new View.AddChangeData();
+    public AddChangeData getAddChangeData() {
+        AddChangeData addChangeData = new AddChangeData();
         addChangeData.name = nameTextField.getText();
         addChangeData.address = addressTextField.getText();
         addChangeData.phoneNumber = phoneNumberTextField.getText();
@@ -1363,7 +1364,7 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         return addChangeData;
     }
 
-    public void fillWithData(View.AddChangeData addChangeData) {
+    public void fillWithData(AddChangeData addChangeData) {
         nameTextField.setText(addChangeData.name);
         addressTextField.setText(addChangeData.address);
         phoneNumberTextField.setText(addChangeData.phoneNumber);

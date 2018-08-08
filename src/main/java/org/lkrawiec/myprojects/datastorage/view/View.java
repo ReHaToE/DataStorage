@@ -5,8 +5,13 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 import java.awt.EventQueue;
+import java.util.LinkedList;
+import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
+import org.lkrawiec.myprojects.datastorage.model.Change;
+import org.lkrawiec.myprojects.datastorage.model.Model;
 
 /**
  *
@@ -18,59 +23,6 @@ public class View {
 
         public InvalidViewStateException() {
         }
-    }
-
-    public static class AddChangeData {
-
-        public String name;
-        public String address;
-        public String phoneNumber;
-        public String email;
-        public String carBrand;
-        public String carModel;
-        public String carLicensePlates;
-        public String carMileage;
-        public String leftFrontNewTiresSize;
-        public String leftFrontNewTiresProfile;
-        public String leftFrontNewTiresBrand;
-        public String leftFrontNewTiresModel;
-        public String leftFrontNewTiresPressure;
-        public String rightFrontNewTiresSize;
-        public String rightFrontNewTiresProfile;
-        public String rightFrontNewTiresBrand;
-        public String rightFrontNewTiresModel;
-        public String rightFrontNewTiresPressure;
-        public String rearLeftNewTiresSize;
-        public String rearLeftNewTiresProfile;
-        public String rearLeftNewTiresBrand;
-        public String rearLeftNewTiresModel;
-        public String rearLeftNewTiresPressure;
-        public String rearRightNewTiresSize;
-        public String rearRightNewTiresProfile;
-        public String rearRightNewTiresBrand;
-        public String rearRightNewTiresModel;
-        public String rearRightNewTiresPressure;
-        public String leftFrontOldTiresSize;
-        public String leftFrontOldTiresProfile;
-        public String leftFrontOldTiresBrand;
-        public String leftFrontOldTiresModel;
-        public String rightFrontOldTiresSize;
-        public String rightFrontOldTiresProfile;
-        public String rightFrontOldTiresBrand;
-        public String rightFrontOldTiresModel;
-        public String rearLeftOldTiresSize;
-        public String rearLeftOldTiresProfile;
-        public String rearLeftOldTiresBrand;
-        public String rearLeftOldTiresModel;
-        public String rearRightOldTiresSize;
-        public String rearRightOldTiresProfile;
-        public String rearRightOldTiresBrand;
-        public String rearRightOldTiresModel;
-        public boolean storeOldTires;
-
-        public AddChangeData() {
-        }
-        
     }
 
     public enum State {
@@ -86,7 +38,8 @@ public class View {
     private final ButtonsPanel buttonsPanel = new ButtonsPanel();
     private final MainPanel mainPanel = new MainPanel();
     private State state = State.UNKNOWN;
-
+    private final Model model = new Model();
+    
     public View() {
         registerForEvents();
     }
@@ -186,10 +139,25 @@ public class View {
                         showMenu();
                         break;
                     default:
+                        Logger.getGlobal().warning(
+                                "back button pressed when not in add_change or history state");
                 }
             }
         });
 
+        buttonsPanel.setSaveAction(new Action() {
+            @Override
+            public void Do() {
+                if (getState() != State.ADD_CHANGE) {
+                    Logger.getGlobal().warning(
+                                "save on another state than ADD_CHANGE");
+                    return;
+                }
+                AddChangeData addChangeData = changeFormPanel.getAddChangeData();
+                model.addChange(addChangeData);    
+            }
+        });
+        
         // main menu registration
         mainPanel.setAddChangeButtonAction(new Action() {
             @Override
@@ -202,6 +170,23 @@ public class View {
             @Override
             public void Do() {
                 showHistoryUI();
+            }
+        });
+        
+        // history menu registration
+        historyPanel.setSearchAction(new Action() {
+            @Override
+            public void Do() {
+                if (getState() != State.HISTORY) {
+                    Logger.getGlobal().warning(
+                            "search executed when not in history state");
+                    return;
+                }
+                String searchLicencePlates = 
+                        historyPanel.getSearchLicencePlates();
+                LinkedList<AddChangeData> changes = 
+                        model.listChangesForPlates(searchLicencePlates);
+                historyPanel.setAddChangeDataList(changes);
             }
         });
     }

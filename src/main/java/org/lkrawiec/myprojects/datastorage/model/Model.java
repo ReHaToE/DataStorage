@@ -7,6 +7,7 @@ package org.lkrawiec.myprojects.datastorage.model;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 
 /**
  *
@@ -14,31 +15,31 @@ import java.util.LinkedList;
  */
 public class Model {
     
-    private final HashMap<ClientsCar.LicensePlates, LinkedList<Change>> 
+    private final HashMap<String, LinkedList<AddChangeData>> 
             licenseChangesMap;
 
     public Model() {
         this.licenseChangesMap = new HashMap<>();
     }
     
-    public void addChange(Change change) {
-        ClientsCar.LicensePlates licensePlates = 
-                change.getClientsCar().getLicensePlates();
+    public void addChange(AddChangeData addChangeData) {
+        String licensePlates = 
+                addChangeData.carLicensePlates;
         
-        LinkedList<Change> list = licenseChangesMap.get(licensePlates);
+        LinkedList<AddChangeData> list = licenseChangesMap.get(licensePlates);
         if (list != null) {
-            list.add(change);
+            list.add(addChangeData);
             return;
         }
         // else
         list = new LinkedList<>();
-        list.add(change);
+        list.add(addChangeData);
         licenseChangesMap.put(licensePlates, list);
     }
     
-    public LinkedList<Change> listChangesForPlates(
-            ClientsCar.LicensePlates licensePlates) {
-        LinkedList<Change> changes = licenseChangesMap.get(licensePlates); 
+    public LinkedList<AddChangeData> listChangesForPlates(
+            String licensePlates) {
+        LinkedList<AddChangeData> changes = licenseChangesMap.get(licensePlates); 
         return changes != null ? changes : new LinkedList<>();
     }
 }

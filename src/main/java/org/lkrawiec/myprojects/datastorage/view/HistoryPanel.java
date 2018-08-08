@@ -5,14 +5,18 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import java.util.LinkedList;
+import java.util.logging.Logger;
 import javax.swing.JPanel;
+import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 
 /**
  *
  * @author lukii
  */
 public class HistoryPanel extends javax.swing.JPanel {
-
+    private Action searchAction;
+    private LinkedList<AddChangeData> changes;
     /**
      * Creates new form HistoryPanel
      */
@@ -37,10 +41,10 @@ public class HistoryPanel extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        searchLicencePlatesTextField = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        historyChangesList = new javax.swing.JList<>();
         jLabel2 = new javax.swing.JLabel();
         secondPanel = new javax.swing.JPanel();
 
@@ -57,12 +61,6 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         jPanel1.add(jLabel1, gridBagConstraints);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -70,9 +68,14 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 10);
-        jPanel1.add(jTextField1, gridBagConstraints);
+        jPanel1.add(searchLicencePlatesTextField, gridBagConstraints);
 
         jButton1.setText("Searchie");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -82,12 +85,12 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         jPanel1.add(jButton1, gridBagConstraints);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        historyChangesList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(historyChangesList);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -127,19 +130,56 @@ public class HistoryPanel extends javax.swing.JPanel {
         add(secondPanel, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        searchAction.Do();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JList<String> historyChangesList;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField searchLicencePlatesTextField;
     private javax.swing.JPanel secondPanel;
     // End of variables declaration//GEN-END:variables
+
+    public void setSearchAction(Action action) {
+        searchAction = action;
+    }
+
+    public String getSearchLicencePlates() {
+        return searchLicencePlatesTextField.getText();
+    }
+    
+    public void setAddChangeDataList(LinkedList<AddChangeData> newChanges) {
+        changes = newChanges;
+        updateHistoryChanges();
+    }
+
+    private void updateHistoryChanges() {
+        if (changes == null) {
+            Logger.getGlobal().warning(
+                    "cannot pass changes as null to viewing list");
+            return;
+        }
+        historyChangesList.setListData(
+                createHistoryChangesFormattedItems(changes));
+    }
+
+    private String[] createHistoryChangesFormattedItems(
+            LinkedList<AddChangeData> historyChanges) {
+        if (historyChanges == null) {
+            return new String[0];
+        }
+        String[] changesArray = new String[historyChanges.size()];
+        for (int i = 0; i < changesArray.length; ++i) {
+            AddChangeData addChangeData = historyChanges.get(i);
+            changesArray[i] = "Date: " + addChangeData.date.toString() 
+                    + ", Mileage: " + addChangeData.carMileage;
+        } 
+        return changesArray;
+    }
 }
