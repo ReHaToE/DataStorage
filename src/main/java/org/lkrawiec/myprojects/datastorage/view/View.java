@@ -88,18 +88,6 @@ public class View {
         });
     }
 
-    public void showChangePanelInHistoryUI() {
-        dispatchToUIThread(() -> {
-            historyPanel.setSecondPanel(changeFormPanel);
-        });
-    }
-
-    public void hideChangePanelInHistoryUI() {
-        dispatchToUIThread(() -> {
-            historyPanel.setSecondPanel(null);
-        });
-    }
-
     private void dispatchToUIThread(Action a) {
         if (EventQueue.isDispatchThread()) {
 //            System.out.println("in thread");

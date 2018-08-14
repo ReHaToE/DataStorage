@@ -5,6 +5,8 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
@@ -17,16 +19,14 @@ import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 public class HistoryPanel extends javax.swing.JPanel {
     private Action searchAction;
     private LinkedList<AddChangeData> changes;
+    private ChangeFormPanel changeFormPanel = new ChangeFormPanel();
     /**
      * Creates new form HistoryPanel
      */
     public HistoryPanel() {
         initComponents();
-    }
-
-    public void setSecondPanel(JPanel panel) {
-        secondPanel.removeAll(); //FIXME
-        secondPanel.add(panel);
+        secondPanel.add(changeFormPanel);
+        changeFormPanel.setVisible(false);
     }
     
     /**
@@ -64,8 +64,9 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridwidth = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 20;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 10);
         jPanel1.add(searchLicencePlatesTextField, gridBagConstraints);
@@ -85,10 +86,10 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         jPanel1.add(jButton1, gridBagConstraints);
 
-        historyChangesList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000", "Date: 10/05/1992, Mileage:70 000" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+        historyChangesList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                historyChangesListValueChanged(evt);
+            }
         });
         jScrollPane1.setViewportView(historyChangesList);
 
@@ -113,6 +114,7 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 15;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
@@ -133,6 +135,17 @@ public class HistoryPanel extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         searchAction.Do();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void historyChangesListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_historyChangesListValueChanged
+        if (changes == null || changes.isEmpty()) {
+            changeFormPanel.setVisible(false);
+            return;
+        }
+        int i = evt.getFirstIndex();
+        AddChangeData addChangeData = changes.get(i);
+        changeFormPanel.fillWithData(addChangeData);
+        changeFormPanel.setVisible(true);
+    }//GEN-LAST:event_historyChangesListValueChanged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -177,7 +190,8 @@ public class HistoryPanel extends javax.swing.JPanel {
         String[] changesArray = new String[historyChanges.size()];
         for (int i = 0; i < changesArray.length; ++i) {
             AddChangeData addChangeData = historyChanges.get(i);
-            changesArray[i] = "Date: " + addChangeData.date.toString() 
+            changesArray[i] = "Date: " + new SimpleDateFormat("dd/MM/yyyy")
+                    .format(addChangeData.date).toString()
                     + ", Mileage: " + addChangeData.carMileage;
         } 
         return changesArray;
