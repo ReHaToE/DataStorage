@@ -26,7 +26,7 @@ public class View {
 
     private final GUIFrame guiframe = new GUIFrame();
     private final HistoryPanel historyPanel = new HistoryPanel();
-    private final ChangeFormPanel changeFormPanel = new ChangeFormPanel();
+    private final ChangeFormPanel changeFormPanel = new ChangeFormPanel(true);
     private final ButtonsPanel buttonsPanel = new ButtonsPanel();
     private final MainPanel mainPanel = new MainPanel();
     private State state = State.UNKNOWN;

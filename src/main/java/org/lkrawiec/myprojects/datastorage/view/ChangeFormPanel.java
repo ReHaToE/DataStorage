@@ -17,9 +17,14 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     /**
      * Creates new form ChangeFormPanel
      */
-    public ChangeFormPanel() {
+    public ChangeFormPanel(boolean editable) {
         initComponents();
-        setPrompts();
+        if (editable) {
+            setPrompts();
+        }
+        else {
+            setEditable(false);
+        }
     }
 
     /**
@@ -1478,6 +1483,66 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModelTextField);
         
     }
+    
+    private void setEditable(boolean value) {    
+        
+        nameTextField.setEditable(value);
+        addressTextField.setEditable(value);
+        phoneNumberTextField.setEditable(value);
+        emailTextField.setEditable(value);
+        
+        brandTextField.setEditable(value);
+        modelTextField.setEditable(value);
+        licensePlatesTextField.setEditable(value);
+        mileageTextField.setEditable(value);
+        
+        leftFrontNewTiresSizeTextField.setEditable(value);
+        leftFrontNewTiresProfileTextField.setEditable(value);
+        leftFrontNewTiresBrandTextField.setEditable(value);
+        leftFrontNewTiresModelTextField.setEditable(value);
+        leftFrontNewTiresPressureTextField.setEditable(value);
+        
+        rightFrontNewTiresSizeTextField.setEditable(value);
+        rightFrontNewTiresProfileTextField.setEditable(value);
+        rightFrontNewTiresBrandTextField.setEditable(value);
+        rightFrontNewTiresModelTextField.setEditable(value);
+        rightFrontNewTiresPressureTextField.setEditable(value);
+        
+        rearLeftNewTiresSizeTextField.setEditable(value);
+        rearLeftNewTiresProfileTextField.setEditable(value);
+        rearLeftNewTiresBrandTextField.setEditable(value);
+        rearLeftNewTiresModelTextField.setEditable(value);
+        rearLeftNewTiresPressureTextField.setEditable(value);
+        
+        rearRightNewTiresSizeTextField.setEditable(value);
+        rearRightNewTiresProfileTextField.setEditable(value);
+        rearRightNewTiresBrandTextField.setEditable(value);
+        rearRightNewTiresModelTextField.setEditable(value);
+        rearRightNewTiresPressureTextField.setEditable(value);
+        
+        leftFrontOldTiresSizeTextField.setEditable(value);
+        leftFrontOldTiresProfileTextField.setEditable(value);
+        leftFrontOldTiresBrandTextField.setEditable(value);
+        leftFrontOldTiresModelTextField.setEditable(value);
+        
+        rightFrontOldTiresSizeTextField.setEditable(value);
+        rightFrontOldTiresProfileTextField.setEditable(value);
+        rightFrontOldTiresBrandTextField.setEditable(value);
+        rightFrontOldTiresModelTextField.setEditable(value);
+        
+        rearLeftOldTiresSizeTextField.setEditable(value);
+        rearLeftOldTiresProfileTextField.setEditable(value);
+        rearLeftOldTiresBrandTextField.setEditable(value);
+        rearLeftOldTiresModelTextField.setEditable(value);
+        
+        rearRightOldTiresSizeTextField.setEditable(value);
+        rearRightOldTiresProfileTextField.setEditable(value);
+        rearRightOldTiresBrandTextField.setEditable(value);
+        rearRightOldTiresModelTextField.setEditable(value);
+        
+        storeOldTiresCheckBox.setEnabled(value);
+    }
+    
     private static final String EX_99999 = "ex. 99999";
     private static final String EX_34LGH5 = "ex. 34-LGH-5";
     private static final String EX__CIVIC = "ex. Civic";

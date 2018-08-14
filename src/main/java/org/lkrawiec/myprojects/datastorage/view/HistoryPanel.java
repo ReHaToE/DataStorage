@@ -19,14 +19,14 @@ import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 public class HistoryPanel extends javax.swing.JPanel {
     private Action searchAction;
     private LinkedList<AddChangeData> changes;
-    private ChangeFormPanel changeFormPanel = new ChangeFormPanel();
+    private ChangeFormPanel changeFormPanel = new ChangeFormPanel(false);
     /**
      * Creates new form HistoryPanel
      */
     public HistoryPanel() {
         initComponents();
         secondPanel.add(changeFormPanel);
-        changeFormPanel.setVisible(false);
+        changeFormPanel.setVisible(false);        
     }
     
     /**
