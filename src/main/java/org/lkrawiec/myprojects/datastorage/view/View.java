@@ -121,65 +121,50 @@ public class View {
 
     private void registerForEvents() {
         // buttons panel registartion
-        buttonsPanel.setBackAction(new Action() {
-            @Override
-            public void Do() {
-                switch (getState()) {
-                    case ADD_CHANGE:
+        buttonsPanel.setBackAction(() -> {
+            switch (getState()) {
+                case ADD_CHANGE:
                     //FALLTHROUGH
-                    case HISTORY:
-                        showMenu();
-                        break;
-                    default:
-                        Logger.getGlobal().warning(
-                                "back button pressed when not in add_change or history state");
-                }
+                case HISTORY:
+                    showMenu();
+                    break;
+                default:
+                    Logger.getGlobal().warning(
+                            "back button pressed when not in add_change or history state");
             }
         });
 
-        buttonsPanel.setSaveAction(new Action() {
-            @Override
-            public void Do() {
-                if (getState() != State.ADD_CHANGE) {
-                    Logger.getGlobal().warning(
-                                "save on another state than ADD_CHANGE");
-                    return;
-                }
-                AddChangeData addChangeData = changeFormPanel.getAddChangeData();
-                model.addChange(addChangeData);    
+        buttonsPanel.setSaveAction(() -> {
+            if (getState() != State.ADD_CHANGE) {
+                Logger.getGlobal().warning(
+                        "save on another state than ADD_CHANGE");
+                return;    
             }
+            AddChangeData addChangeData = changeFormPanel.getAddChangeData();
+            model.addChange(addChangeData);
         });
         
         // main menu registration
-        mainPanel.setAddChangeButtonAction(new Action() {
-            @Override
-            public void Do() {
-                showAddChangeUI();
-            }
+        mainPanel.setAddChangeButtonAction(() -> {
+            showAddChangeUI();
         });
 
-        mainPanel.setSearchCarButtonAction(new Action() {
-            @Override
-            public void Do() {
-                showHistoryUI();
-            }
+        mainPanel.setSearchCarButtonAction(() -> {
+            showHistoryUI();
         });
         
         // history menu registration
-        historyPanel.setSearchAction(new Action() {
-            @Override
-            public void Do() {
-                if (getState() != State.HISTORY) {
-                    Logger.getGlobal().warning(
-                            "search executed when not in history state");
-                    return;
-                }
-                String searchLicencePlates = 
-                        historyPanel.getSearchLicencePlates();
-                LinkedList<AddChangeData> changes = 
-                        model.listChangesForPlates(searchLicencePlates);
-                historyPanel.setAddChangeDataList(changes);
+        historyPanel.setSearchAction(() -> {
+            if (getState() != State.HISTORY) {
+                Logger.getGlobal().warning(
+                        "search executed when not in history state");
+                return;
             }
+            String searchLicencePlates =
+                    historyPanel.getSearchLicencePlates();
+            LinkedList<AddChangeData> changes =
+                    model.listChangesForPlates(searchLicencePlates);
+            historyPanel.setAddChangeDataList(changes);
         });
     }
 }
