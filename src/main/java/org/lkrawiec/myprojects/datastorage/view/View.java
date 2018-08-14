@@ -9,8 +9,6 @@ import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 import java.awt.EventQueue;
 import java.util.LinkedList;
 import java.util.logging.Logger;
-import javax.swing.SwingUtilities;
-import org.lkrawiec.myprojects.datastorage.model.Change;
 import org.lkrawiec.myprojects.datastorage.model.Model;
 
 /**
@@ -18,12 +16,6 @@ import org.lkrawiec.myprojects.datastorage.model.Model;
  * @author lukii
  */
 public class View {
-
-    public class InvalidViewStateException extends Exception {
-
-        public InvalidViewStateException() {
-        }
-    }
 
     public enum State {
         MENU,
@@ -83,11 +75,11 @@ public class View {
         return state;
     }
 
-    public AddChangeData retrieveChangeData() throws InvalidViewStateException {
+    public AddChangeData retrieveChangeData() {
         if (getState() == State.ADD_CHANGE) {
             return changeFormPanel.getAddChangeData();
         }
-        throw new InvalidViewStateException();
+        return null;
     }
 
     public void fillChangePanel(AddChangeData data) {
