@@ -130,6 +130,7 @@ public class View {
             }
             AddChangeData addChangeData = changeFormPanel.getAddChangeData();
             model.addChange(addChangeData);
+            changeFormPanel.resetData();
         });
         
         // main menu registration

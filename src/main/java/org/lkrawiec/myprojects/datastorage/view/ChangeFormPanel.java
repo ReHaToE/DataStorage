@@ -1543,6 +1543,65 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         storeOldTiresCheckBox.setEnabled(value);
     }
     
+    public void resetData () {
+        
+        nameTextField.setText(null);
+        addressTextField.setText(null);
+        phoneNumberTextField.setText(null);
+        emailTextField.setText(null);
+        
+        brandTextField.setText(null);
+        modelTextField.setText(null);
+        licensePlatesTextField.setText(null);
+        mileageTextField.setText(null);
+        
+        leftFrontNewTiresSizeTextField.setText(null);
+        leftFrontNewTiresProfileTextField.setText(null);
+        leftFrontNewTiresBrandTextField.setText(null);
+        leftFrontNewTiresModelTextField.setText(null);
+        leftFrontNewTiresPressureTextField.setText(null);
+        
+        rightFrontNewTiresSizeTextField.setText(null);
+        rightFrontNewTiresProfileTextField.setText(null);
+        rightFrontNewTiresBrandTextField.setText(null);
+        rightFrontNewTiresModelTextField.setText(null);
+        rightFrontNewTiresPressureTextField.setText(null);
+        
+        rearLeftNewTiresSizeTextField.setText(null);
+        rearLeftNewTiresProfileTextField.setText(null);
+        rearLeftNewTiresBrandTextField.setText(null);
+        rearLeftNewTiresModelTextField.setText(null);
+        rearLeftNewTiresPressureTextField.setText(null);
+        
+        rearRightNewTiresSizeTextField.setText(null);
+        rearRightNewTiresProfileTextField.setText(null);
+        rearRightNewTiresBrandTextField.setText(null);
+        rearRightNewTiresModelTextField.setText(null);
+        rearRightNewTiresPressureTextField.setText(null);
+        
+        leftFrontOldTiresSizeTextField.setText(null);
+        leftFrontOldTiresProfileTextField.setText(null);
+        leftFrontOldTiresBrandTextField.setText(null);
+        leftFrontOldTiresModelTextField.setText(null);
+        
+        rightFrontOldTiresSizeTextField.setText(null);
+        rightFrontOldTiresProfileTextField.setText(null);
+        rightFrontOldTiresBrandTextField.setText(null);
+        rightFrontOldTiresModelTextField.setText(null);
+        
+        rearLeftOldTiresSizeTextField.setText(null);
+        rearLeftOldTiresProfileTextField.setText(null);
+        rearLeftOldTiresBrandTextField.setText(null);
+        rearLeftOldTiresModelTextField.setText(null);
+        
+        rearRightOldTiresSizeTextField.setText(null);
+        rearRightOldTiresProfileTextField.setText(null);
+        rearRightOldTiresBrandTextField.setText(null);
+        rearRightOldTiresModelTextField.setText(null);
+        
+        storeOldTiresCheckBox.setSelected(false);
+    }
+    
     private static final String EX_99999 = "ex. 99999";
     private static final String EX_34LGH5 = "ex. 34-LGH-5";
     private static final String EX__CIVIC = "ex. Civic";

@@ -29,14 +29,7 @@ public class Main {
         view.showHistoryUI();
         view.makeVisible();
     }
-    
-    private static void test3() {
-        View view = new View();
-        view.showHistoryUI();
-        view.showChangePanelInHistoryUI();
-        view.makeVisible();
-    }
-    
+        
     private static void test4() {
         View view = new View();
         view.showAddChangeUI();
