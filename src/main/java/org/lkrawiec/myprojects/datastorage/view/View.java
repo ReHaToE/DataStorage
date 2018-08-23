@@ -12,11 +12,16 @@ import java.util.logging.Logger;
 import org.lkrawiec.myprojects.datastorage.model.Model;
 
 /**
- *
- * @author lukii
+ * View represents logic for displaying UI and has control over model.
+ * This class is part of VM (View-Model).
+ * 
+ * @author Lukasz Krawiec
  */
 public class View {
 
+    /**
+     * Enum for state of view
+     */
     public enum State {
         MENU,
         ADD_CHANGE,
@@ -24,18 +29,32 @@ public class View {
         UNKNOWN
     }
 
-    private final GUIFrame guiframe = new GUIFrame();
+    /** Main frame of this application */
+    private final GUIFrame guiframe = new GUIFrame();   
+    /** History panel */
     private final HistoryPanel historyPanel = new HistoryPanel();
+    /** Change form panel */
     private final ChangeFormPanel changeFormPanel = new ChangeFormPanel(true);
+    /** Buttons panel */
     private final ButtonsPanel buttonsPanel = new ButtonsPanel();
+    /** Main panel shown at the start of the application */
     private final MainPanel mainPanel = new MainPanel();
+    /** Current state of view */
     private State state = State.UNKNOWN;
+    /** Model as a part of the VM (View-Model) */
     private final Model model = new Model();
     
+    /**
+     * Sets up view but does not start it. 
+     */
     public View() {
-        registerForEvents();
+        setActionForEvents();
+        showMenu();
     }
-
+    
+    /**
+     * Starts GUI and makes it visible to the user
+     */
     public void makeVisible() {
         dispatchToUIThread(() -> {
             guiframe.startGUI();
@@ -43,7 +62,10 @@ public class View {
 
     }
 
-    public void showMenu() {
+    /**
+     * Sets GUI to main panel and sets state to MENU
+     */
+    private void showMenu() {
         dispatchToUIThread(() -> {
             guiframe.setFirstPanel(mainPanel);
             guiframe.setSecondPanel(null);
@@ -53,7 +75,10 @@ public class View {
         state = State.MENU;
     }
 
-    public void showAddChangeUI() {
+    /**
+     * Sets GUI to change form panel and sets state to ADD_CHANGE
+     */
+    private void showAddChangeUI() {
         dispatchToUIThread(() -> {
             buttonsPanel.setSaveButtonVisible(true);
             guiframe.setFirstPanel(changeFormPanel);
@@ -62,7 +87,10 @@ public class View {
         state = State.ADD_CHANGE;
     }
 
-    public void showHistoryUI() {
+    /**
+     * Sets GUI to history panel and sets state to HISTORY
+     */
+    private void showHistoryUI() {
         dispatchToUIThread(() -> {
             buttonsPanel.setSaveButtonVisible(false);
             guiframe.setFirstPanel(historyPanel);
@@ -71,24 +99,34 @@ public class View {
         state = State.HISTORY;
     }
 
-    public State getState() {
+    /**
+     * Retrieves current state
+     * 
+     * @return actual state of view
+     */
+    private State getState() {
         return state;
     }
 
-    public AddChangeData retrieveChangeData() {
+    /**
+     * Retrieves from change form panel its data.
+     * 
+     * @return data from mentioned panel or if it's invalid state then null
+     */
+    private AddChangeData retrieveChangeData() {
         if (getState() == State.ADD_CHANGE) {
             return changeFormPanel.getAddChangeData();
         }
         return null;
     }
 
-    public void fillChangePanel(AddChangeData data) {
-        dispatchToUIThread(() -> {
-            changeFormPanel.fillWithData(data);
-        });
-    }
-
+    /**
+     * Dispatches given action to UI thread to avoid racing problems
+     * 
+     * @param a given action
+     */
     private void dispatchToUIThread(Action a) {
+        // FIXME
         if (EventQueue.isDispatchThread()) {
 //            System.out.println("in thread");
             new Thread(() -> {
@@ -107,8 +145,12 @@ public class View {
 //        SwingUtilities.invokeLater(()->{a.Do();});
     }
 
-    private void registerForEvents() {
-        // buttons panel registartion
+    /**
+     * Configurates panels to match the logic of view by
+     * setting actions for events
+     */
+    private void setActionForEvents() {
+        // buttons panel registration
         buttonsPanel.setBackAction(() -> {
             switch (getState()) {
                 case ADD_CHANGE:
@@ -118,7 +160,8 @@ public class View {
                     break;
                 default:
                     Logger.getGlobal().warning(
-                            "back button pressed when not in add_change or history state");
+                            "back button pressed when not in "
+                                    + "add_change or history state");
             }
         });
 
@@ -150,7 +193,7 @@ public class View {
                 return;
             }
             String searchLicencePlates =
-                    historyPanel.getSearchLicencePlates();
+                    historyPanel.getSearchLicensePlates();
             LinkedList<AddChangeData> changes =
                     model.listChangesForPlates(searchLicencePlates);
             historyPanel.setAddChangeDataList(changes);

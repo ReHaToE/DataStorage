@@ -9,13 +9,47 @@ import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 import org.jdesktop.swingx.prompt.PromptSupport;
 
 /**
- *
- * @author lukii
+ * Panel containing all information about change. Has prompts with examples.
+ * It's a form to be filled by data by user.
+ * 
+ * @author Lukasz Krawiec
  */
 public class ChangeFormPanel extends javax.swing.JPanel {
-
+    
     /**
-     * Creates new form ChangeFormPanel
+     * Example prompts:
+     */
+    /** Example prompt for Mileage */
+    private static final String EX_99999 = "ex. 99999";
+    /** Example prompt for License Plates */
+    private static final String EX_34LGH5 = "ex. 34-LGH-5";
+    /** Example prompt for Model */
+    private static final String EX__CIVIC = "ex. Civic";
+    /** Example prompt for Brand */
+    private static final String EX__HONDA = "ex. Honda";
+    /** Example prompt for Email */
+    private static final String EX__JV_VLIVENL = "ex. JvV@live.nl";
+    /** Example prompt for Phone Number */
+    private static final String EX_06_81923452 = "ex. 06 81923452";
+    /** Example prompt for Address */
+    private static final String EX__SCHEISTRAAT_411 = "ex. Scheistraat 411";
+    /** Example prompt for Name */
+    private static final String EX__JAN_VAN__VLIET = "ex. Jan van Vliet";
+    /** Example prompt for Tire Pressure */
+    private static final String EX_24 = "ex. 2.4";
+    /** Example prompt for Tire Model */
+    private static final String EX__CONTI_ECO_CONTACT5 = "ex. ContiEcoContact5";
+    /** Example prompt for Tire Size */
+    private static final String EX_1856514 = "ex. 185/65/14";
+    /** Example prompt for Tire Profile */
+    private static final String EX_41 = "ex. 4.1";
+    /** Example prompt for Tire Brand */
+    private static final String EX__CONTINENTAL = "ex. Continental";
+    
+    /**
+     * Initialisates components of change form panel.
+     * If given param is true, sets prompts else sets given param to false.
+     * @param editable given param
      */
     public ChangeFormPanel(boolean editable) {
         initComponents();
@@ -27,6 +61,300 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         }
     }
 
+    public AddChangeData getAddChangeData() {
+        AddChangeData addChangeData = new AddChangeData();
+        addChangeData.name = nameTextField.getText();
+        addChangeData.address = addressTextField.getText();
+        addChangeData.phoneNumber = phoneNumberTextField.getText();
+        addChangeData.email = emailTextField.getText();
+        
+        addChangeData.carBrand = brandTextField.getText();
+        addChangeData.carModel = modelTextField.getText();
+        addChangeData.carLicensePlates = licensePlatesTextField.getText();
+        addChangeData.carMileage = mileageTextField.getText();
+        
+        addChangeData.leftFrontNewTiresSize = leftFrontNewTiresSizeTextField.getText();
+        addChangeData.leftFrontNewTiresProfile = leftFrontNewTiresProfileTextField.getText();
+        addChangeData.leftFrontNewTiresBrand = leftFrontNewTiresBrandTextField.getText();
+        addChangeData.leftFrontNewTiresModel = leftFrontNewTiresModelTextField.getText();
+        addChangeData.leftFrontNewTiresPressure = leftFrontNewTiresPressureTextField.getText();
+        
+        addChangeData.rightFrontNewTiresSize = rightFrontNewTiresSizeTextField.getText();
+        addChangeData.rightFrontNewTiresProfile = rightFrontNewTiresProfileTextField.getText();
+        addChangeData.rightFrontNewTiresBrand = rightFrontNewTiresBrandTextField.getText();
+        addChangeData.rightFrontNewTiresModel = rightFrontNewTiresModelTextField.getText();
+        addChangeData.rightFrontNewTiresPressure = rightFrontNewTiresPressureTextField.getText();
+        
+        addChangeData.rearLeftNewTiresSize = rearLeftNewTiresSizeTextField.getText();
+        addChangeData.rearLeftNewTiresProfile = rearLeftNewTiresProfileTextField.getText();
+        addChangeData.rearLeftNewTiresBrand = rearLeftNewTiresBrandTextField.getText();
+        addChangeData.rearLeftNewTiresModel = rearLeftNewTiresModelTextField.getText();
+        addChangeData.rearLeftNewTiresPressure = rearLeftNewTiresPressureTextField.getText();
+        
+        addChangeData.rearRightNewTiresSize = rearRightNewTiresSizeTextField.getText();
+        addChangeData.rearRightNewTiresProfile = rearRightNewTiresProfileTextField.getText();
+        addChangeData.rearRightNewTiresBrand = rearRightNewTiresBrandTextField.getText();
+        addChangeData.rearRightNewTiresModel = rearRightNewTiresModelTextField.getText();
+        addChangeData.rearRightNewTiresPressure = rearRightNewTiresPressureTextField.getText();
+        
+        addChangeData.leftFrontOldTiresSize = leftFrontOldTiresSizeTextField.getText();
+        addChangeData.leftFrontOldTiresProfile = leftFrontOldTiresProfileTextField.getText();
+        addChangeData.leftFrontOldTiresBrand = leftFrontOldTiresBrandTextField.getText();
+        addChangeData.leftFrontOldTiresModel = leftFrontOldTiresModelTextField.getText();
+        
+        addChangeData.rightFrontOldTiresSize = rightFrontOldTiresSizeTextField.getText();
+        addChangeData.rightFrontOldTiresProfile = rightFrontOldTiresProfileTextField.getText();
+        addChangeData.rightFrontOldTiresBrand = rightFrontOldTiresBrandTextField.getText();
+        addChangeData.rightFrontOldTiresModel = rightFrontOldTiresModelTextField.getText();
+        
+        addChangeData.rearLeftOldTiresSize = rearLeftOldTiresSizeTextField.getText();
+        addChangeData.rearLeftOldTiresProfile = rearLeftOldTiresProfileTextField.getText();
+        addChangeData.rearLeftOldTiresBrand = rearLeftOldTiresBrandTextField.getText();
+        addChangeData.rearLeftOldTiresModel = rearLeftOldTiresModelTextField.getText();
+        
+        addChangeData.rearRightOldTiresSize = rearRightOldTiresSizeTextField.getText();
+        addChangeData.rearRightOldTiresProfile = rearRightOldTiresProfileTextField.getText();
+        addChangeData.rearRightOldTiresBrand = rearRightOldTiresBrandTextField.getText();
+        addChangeData.rearRightOldTiresModel = rearRightOldTiresModelTextField.getText();
+        
+        addChangeData.storeOldTires = storeOldTiresCheckBox.isSelected();
+
+        return addChangeData;
+    }
+
+    public void fillWithData(AddChangeData addChangeData) {
+        nameTextField.setText(addChangeData.name);
+        addressTextField.setText(addChangeData.address);
+        phoneNumberTextField.setText(addChangeData.phoneNumber);
+        emailTextField.setText(addChangeData.email);
+        
+        brandTextField.setText(addChangeData.carBrand);
+        modelTextField.setText(addChangeData.carModel);
+        licensePlatesTextField.setText(addChangeData.carLicensePlates);
+        mileageTextField.setText(addChangeData.carMileage);
+        
+        leftFrontNewTiresSizeTextField.setText(addChangeData.leftFrontNewTiresSize);
+        leftFrontNewTiresProfileTextField.setText(addChangeData.leftFrontNewTiresProfile);
+        leftFrontNewTiresBrandTextField.setText(addChangeData.leftFrontNewTiresBrand);
+        leftFrontNewTiresModelTextField.setText(addChangeData.leftFrontNewTiresModel);
+        leftFrontNewTiresPressureTextField.setText(addChangeData.leftFrontNewTiresPressure);
+        
+        rightFrontNewTiresSizeTextField.setText(addChangeData.rightFrontNewTiresSize);
+        rightFrontNewTiresProfileTextField.setText(addChangeData.rightFrontNewTiresProfile);
+        rightFrontNewTiresBrandTextField.setText(addChangeData.rightFrontNewTiresBrand);
+        rightFrontNewTiresModelTextField.setText(addChangeData.rightFrontNewTiresModel);
+        rightFrontNewTiresPressureTextField.setText(addChangeData.rightFrontNewTiresPressure);
+        
+        rearLeftNewTiresSizeTextField.setText(addChangeData.rearLeftNewTiresSize);
+        rearLeftNewTiresProfileTextField.setText(addChangeData.rearLeftNewTiresProfile);
+        rearLeftNewTiresBrandTextField.setText(addChangeData.rearLeftNewTiresBrand);
+        rearLeftNewTiresModelTextField.setText(addChangeData.rearLeftNewTiresModel);
+        rearLeftNewTiresPressureTextField.setText(addChangeData.rearLeftNewTiresPressure);
+        
+        rearRightNewTiresSizeTextField.setText(addChangeData.rearRightNewTiresSize);
+        rearRightNewTiresProfileTextField.setText(addChangeData.rearRightNewTiresProfile);
+        rearRightNewTiresBrandTextField.setText(addChangeData.rearRightNewTiresBrand);
+        rearRightNewTiresModelTextField.setText(addChangeData.rearRightNewTiresModel);
+        rearRightNewTiresPressureTextField.setText(addChangeData.rearRightNewTiresPressure);
+        
+        leftFrontOldTiresSizeTextField.setText(addChangeData.leftFrontOldTiresSize);
+        leftFrontOldTiresProfileTextField.setText(addChangeData.leftFrontOldTiresProfile);
+        leftFrontOldTiresBrandTextField.setText(addChangeData.leftFrontOldTiresBrand);
+        leftFrontOldTiresModelTextField.setText(addChangeData.leftFrontOldTiresModel);
+        
+        rightFrontOldTiresSizeTextField.setText(addChangeData.rightFrontOldTiresSize);
+        rightFrontOldTiresProfileTextField.setText(addChangeData.rightFrontOldTiresProfile);
+        rightFrontOldTiresBrandTextField.setText(addChangeData.rightFrontOldTiresBrand);
+        rightFrontOldTiresModelTextField.setText(addChangeData.rightFrontOldTiresModel);
+        
+        rearLeftOldTiresSizeTextField.setText(addChangeData.rearLeftOldTiresSize);
+        rearLeftOldTiresProfileTextField.setText(addChangeData.rearLeftOldTiresProfile);
+        rearLeftOldTiresBrandTextField.setText(addChangeData.rearLeftOldTiresBrand);
+        rearLeftOldTiresModelTextField.setText(addChangeData.rearLeftOldTiresModel);
+        
+        rearRightOldTiresSizeTextField.setText(addChangeData.rearRightOldTiresSize);
+        rearRightOldTiresProfileTextField.setText(addChangeData.rearRightOldTiresProfile);
+        rearRightOldTiresBrandTextField.setText(addChangeData.rearRightOldTiresBrand);
+        rearRightOldTiresModelTextField.setText(addChangeData.rearRightOldTiresModel);
+        
+        storeOldTiresCheckBox.setSelected(addChangeData.storeOldTires);
+    }
+
+    private void setPrompts() {
+        PromptSupport.setPrompt(EX__JAN_VAN__VLIET, nameTextField);
+        PromptSupport.setPrompt(EX__SCHEISTRAAT_411, addressTextField);
+        PromptSupport.setPrompt(EX_06_81923452, phoneNumberTextField);
+        PromptSupport.setPrompt(EX__JV_VLIVENL, emailTextField);
+        
+        PromptSupport.setPrompt(EX__HONDA, brandTextField);
+        PromptSupport.setPrompt(EX__CIVIC, modelTextField);
+        PromptSupport.setPrompt(EX_34LGH5, licensePlatesTextField);
+        PromptSupport.setPrompt(EX_99999, mileageTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, leftFrontNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, leftFrontNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, leftFrontNewTiresPressureTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rightFrontNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rightFrontNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rightFrontNewTiresPressureTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rearLeftNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearLeftNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rearLeftNewTiresPressureTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rearRightNewTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearRightNewTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightNewTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightNewTiresModelTextField);
+        PromptSupport.setPrompt(EX_24, rearRightNewTiresPressureTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, leftFrontOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, leftFrontOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontOldTiresModelTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rightFrontOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rightFrontOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontOldTiresModelTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rearLeftOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearLeftOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftOldTiresModelTextField);
+        
+        PromptSupport.setPrompt(EX_1856514, rearRightOldTiresSizeTextField);
+        PromptSupport.setPrompt(EX_41, rearRightOldTiresProfileTextField);
+        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightOldTiresBrandTextField);
+        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModelTextField);
+        
+    }
+    
+    private void setEditable(boolean value) {    
+        
+        nameTextField.setEditable(value);
+        addressTextField.setEditable(value);
+        phoneNumberTextField.setEditable(value);
+        emailTextField.setEditable(value);
+        
+        brandTextField.setEditable(value);
+        modelTextField.setEditable(value);
+        licensePlatesTextField.setEditable(value);
+        mileageTextField.setEditable(value);
+        
+        leftFrontNewTiresSizeTextField.setEditable(value);
+        leftFrontNewTiresProfileTextField.setEditable(value);
+        leftFrontNewTiresBrandTextField.setEditable(value);
+        leftFrontNewTiresModelTextField.setEditable(value);
+        leftFrontNewTiresPressureTextField.setEditable(value);
+        
+        rightFrontNewTiresSizeTextField.setEditable(value);
+        rightFrontNewTiresProfileTextField.setEditable(value);
+        rightFrontNewTiresBrandTextField.setEditable(value);
+        rightFrontNewTiresModelTextField.setEditable(value);
+        rightFrontNewTiresPressureTextField.setEditable(value);
+        
+        rearLeftNewTiresSizeTextField.setEditable(value);
+        rearLeftNewTiresProfileTextField.setEditable(value);
+        rearLeftNewTiresBrandTextField.setEditable(value);
+        rearLeftNewTiresModelTextField.setEditable(value);
+        rearLeftNewTiresPressureTextField.setEditable(value);
+        
+        rearRightNewTiresSizeTextField.setEditable(value);
+        rearRightNewTiresProfileTextField.setEditable(value);
+        rearRightNewTiresBrandTextField.setEditable(value);
+        rearRightNewTiresModelTextField.setEditable(value);
+        rearRightNewTiresPressureTextField.setEditable(value);
+        
+        leftFrontOldTiresSizeTextField.setEditable(value);
+        leftFrontOldTiresProfileTextField.setEditable(value);
+        leftFrontOldTiresBrandTextField.setEditable(value);
+        leftFrontOldTiresModelTextField.setEditable(value);
+        
+        rightFrontOldTiresSizeTextField.setEditable(value);
+        rightFrontOldTiresProfileTextField.setEditable(value);
+        rightFrontOldTiresBrandTextField.setEditable(value);
+        rightFrontOldTiresModelTextField.setEditable(value);
+        
+        rearLeftOldTiresSizeTextField.setEditable(value);
+        rearLeftOldTiresProfileTextField.setEditable(value);
+        rearLeftOldTiresBrandTextField.setEditable(value);
+        rearLeftOldTiresModelTextField.setEditable(value);
+        
+        rearRightOldTiresSizeTextField.setEditable(value);
+        rearRightOldTiresProfileTextField.setEditable(value);
+        rearRightOldTiresBrandTextField.setEditable(value);
+        rearRightOldTiresModelTextField.setEditable(value);
+        
+        storeOldTiresCheckBox.setEnabled(value);
+    }
+    
+    public void resetData () {
+        
+        nameTextField.setText(null);
+        addressTextField.setText(null);
+        phoneNumberTextField.setText(null);
+        emailTextField.setText(null);
+        
+        brandTextField.setText(null);
+        modelTextField.setText(null);
+        licensePlatesTextField.setText(null);
+        mileageTextField.setText(null);
+        
+        leftFrontNewTiresSizeTextField.setText(null);
+        leftFrontNewTiresProfileTextField.setText(null);
+        leftFrontNewTiresBrandTextField.setText(null);
+        leftFrontNewTiresModelTextField.setText(null);
+        leftFrontNewTiresPressureTextField.setText(null);
+        
+        rightFrontNewTiresSizeTextField.setText(null);
+        rightFrontNewTiresProfileTextField.setText(null);
+        rightFrontNewTiresBrandTextField.setText(null);
+        rightFrontNewTiresModelTextField.setText(null);
+        rightFrontNewTiresPressureTextField.setText(null);
+        
+        rearLeftNewTiresSizeTextField.setText(null);
+        rearLeftNewTiresProfileTextField.setText(null);
+        rearLeftNewTiresBrandTextField.setText(null);
+        rearLeftNewTiresModelTextField.setText(null);
+        rearLeftNewTiresPressureTextField.setText(null);
+        
+        rearRightNewTiresSizeTextField.setText(null);
+        rearRightNewTiresProfileTextField.setText(null);
+        rearRightNewTiresBrandTextField.setText(null);
+        rearRightNewTiresModelTextField.setText(null);
+        rearRightNewTiresPressureTextField.setText(null);
+        
+        leftFrontOldTiresSizeTextField.setText(null);
+        leftFrontOldTiresProfileTextField.setText(null);
+        leftFrontOldTiresBrandTextField.setText(null);
+        leftFrontOldTiresModelTextField.setText(null);
+        
+        rightFrontOldTiresSizeTextField.setText(null);
+        rightFrontOldTiresProfileTextField.setText(null);
+        rightFrontOldTiresBrandTextField.setText(null);
+        rightFrontOldTiresModelTextField.setText(null);
+        
+        rearLeftOldTiresSizeTextField.setText(null);
+        rearLeftOldTiresProfileTextField.setText(null);
+        rearLeftOldTiresBrandTextField.setText(null);
+        rearLeftOldTiresModelTextField.setText(null);
+        
+        rearRightOldTiresSizeTextField.setText(null);
+        rearRightOldTiresProfileTextField.setText(null);
+        rearRightOldTiresBrandTextField.setText(null);
+        rearRightOldTiresModelTextField.setText(null);
+        
+        storeOldTiresCheckBox.setSelected(false);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -1190,7 +1518,6 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         add(jPanel9, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField addressTextField;
     private javax.swing.JTextField brandTextField;
@@ -1307,312 +1634,4 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private javax.swing.JTextField rightFrontOldTiresSizeTextField;
     private javax.swing.JCheckBox storeOldTiresCheckBox;
     // End of variables declaration//GEN-END:variables
-
-    public AddChangeData getAddChangeData() {
-        AddChangeData addChangeData = new AddChangeData();
-        addChangeData.name = nameTextField.getText();
-        addChangeData.address = addressTextField.getText();
-        addChangeData.phoneNumber = phoneNumberTextField.getText();
-        addChangeData.email = emailTextField.getText();
-        
-        addChangeData.carBrand = brandTextField.getText();
-        addChangeData.carModel = modelTextField.getText();
-        addChangeData.carLicensePlates = licensePlatesTextField.getText();
-        addChangeData.carMileage = mileageTextField.getText();
-        
-        addChangeData.leftFrontNewTiresSize = leftFrontNewTiresSizeTextField.getText();
-        addChangeData.leftFrontNewTiresProfile = leftFrontNewTiresProfileTextField.getText();
-        addChangeData.leftFrontNewTiresBrand = leftFrontNewTiresBrandTextField.getText();
-        addChangeData.leftFrontNewTiresModel = leftFrontNewTiresModelTextField.getText();
-        addChangeData.leftFrontNewTiresPressure = leftFrontNewTiresPressureTextField.getText();
-        
-        addChangeData.rightFrontNewTiresSize = rightFrontNewTiresSizeTextField.getText();
-        addChangeData.rightFrontNewTiresProfile = rightFrontNewTiresProfileTextField.getText();
-        addChangeData.rightFrontNewTiresBrand = rightFrontNewTiresBrandTextField.getText();
-        addChangeData.rightFrontNewTiresModel = rightFrontNewTiresModelTextField.getText();
-        addChangeData.rightFrontNewTiresPressure = rightFrontNewTiresPressureTextField.getText();
-        
-        addChangeData.rearLeftNewTiresSize = rearLeftNewTiresSizeTextField.getText();
-        addChangeData.rearLeftNewTiresProfile = rearLeftNewTiresProfileTextField.getText();
-        addChangeData.rearLeftNewTiresBrand = rearLeftNewTiresBrandTextField.getText();
-        addChangeData.rearLeftNewTiresModel = rearLeftNewTiresModelTextField.getText();
-        addChangeData.rearLeftNewTiresPressure = rearLeftNewTiresPressureTextField.getText();
-        
-        addChangeData.rearRightNewTiresSize = rearRightNewTiresSizeTextField.getText();
-        addChangeData.rearRightNewTiresProfile = rearRightNewTiresProfileTextField.getText();
-        addChangeData.rearRightNewTiresBrand = rearRightNewTiresBrandTextField.getText();
-        addChangeData.rearRightNewTiresModel = rearRightNewTiresModelTextField.getText();
-        addChangeData.rearRightNewTiresPressure = rearRightNewTiresPressureTextField.getText();
-        
-        addChangeData.leftFrontOldTiresSize = leftFrontOldTiresSizeTextField.getText();
-        addChangeData.leftFrontOldTiresProfile = leftFrontOldTiresProfileTextField.getText();
-        addChangeData.leftFrontOldTiresBrand = leftFrontOldTiresBrandTextField.getText();
-        addChangeData.leftFrontOldTiresModel = leftFrontOldTiresModelTextField.getText();
-        
-        addChangeData.rightFrontOldTiresSize = rightFrontOldTiresSizeTextField.getText();
-        addChangeData.rightFrontOldTiresProfile = rightFrontOldTiresProfileTextField.getText();
-        addChangeData.rightFrontOldTiresBrand = rightFrontOldTiresBrandTextField.getText();
-        addChangeData.rightFrontOldTiresModel = rightFrontOldTiresModelTextField.getText();
-        
-        addChangeData.rearLeftOldTiresSize = rearLeftOldTiresSizeTextField.getText();
-        addChangeData.rearLeftOldTiresProfile = rearLeftOldTiresProfileTextField.getText();
-        addChangeData.rearLeftOldTiresBrand = rearLeftOldTiresBrandTextField.getText();
-        addChangeData.rearLeftOldTiresModel = rearLeftOldTiresModelTextField.getText();
-        
-        addChangeData.rearRightOldTiresSize = rearRightOldTiresSizeTextField.getText();
-        addChangeData.rearRightOldTiresProfile = rearRightOldTiresProfileTextField.getText();
-        addChangeData.rearRightOldTiresBrand = rearRightOldTiresBrandTextField.getText();
-        addChangeData.rearRightOldTiresModel = rearRightOldTiresModelTextField.getText();
-        
-        addChangeData.storeOldTires = storeOldTiresCheckBox.isSelected();
-
-        return addChangeData;
-    }
-
-    public void fillWithData(AddChangeData addChangeData) {
-        nameTextField.setText(addChangeData.name);
-        addressTextField.setText(addChangeData.address);
-        phoneNumberTextField.setText(addChangeData.phoneNumber);
-        emailTextField.setText(addChangeData.email);
-        
-        brandTextField.setText(addChangeData.carBrand);
-        modelTextField.setText(addChangeData.carModel);
-        licensePlatesTextField.setText(addChangeData.carLicensePlates);
-        mileageTextField.setText(addChangeData.carMileage);
-        
-        leftFrontNewTiresSizeTextField.setText(addChangeData.leftFrontNewTiresSize);
-        leftFrontNewTiresProfileTextField.setText(addChangeData.leftFrontNewTiresProfile);
-        leftFrontNewTiresBrandTextField.setText(addChangeData.leftFrontNewTiresBrand);
-        leftFrontNewTiresModelTextField.setText(addChangeData.leftFrontNewTiresModel);
-        leftFrontNewTiresPressureTextField.setText(addChangeData.leftFrontNewTiresPressure);
-        
-        rightFrontNewTiresSizeTextField.setText(addChangeData.rightFrontNewTiresSize);
-        rightFrontNewTiresProfileTextField.setText(addChangeData.rightFrontNewTiresProfile);
-        rightFrontNewTiresBrandTextField.setText(addChangeData.rightFrontNewTiresBrand);
-        rightFrontNewTiresModelTextField.setText(addChangeData.rightFrontNewTiresModel);
-        rightFrontNewTiresPressureTextField.setText(addChangeData.rightFrontNewTiresPressure);
-        
-        rearLeftNewTiresSizeTextField.setText(addChangeData.rearLeftNewTiresSize);
-        rearLeftNewTiresProfileTextField.setText(addChangeData.rearLeftNewTiresProfile);
-        rearLeftNewTiresBrandTextField.setText(addChangeData.rearLeftNewTiresBrand);
-        rearLeftNewTiresModelTextField.setText(addChangeData.rearLeftNewTiresModel);
-        rearLeftNewTiresPressureTextField.setText(addChangeData.rearLeftNewTiresPressure);
-        
-        rearRightNewTiresSizeTextField.setText(addChangeData.rearRightNewTiresSize);
-        rearRightNewTiresProfileTextField.setText(addChangeData.rearRightNewTiresProfile);
-        rearRightNewTiresBrandTextField.setText(addChangeData.rearRightNewTiresBrand);
-        rearRightNewTiresModelTextField.setText(addChangeData.rearRightNewTiresModel);
-        rearRightNewTiresPressureTextField.setText(addChangeData.rearRightNewTiresPressure);
-        
-        leftFrontOldTiresSizeTextField.setText(addChangeData.leftFrontOldTiresSize);
-        leftFrontOldTiresProfileTextField.setText(addChangeData.leftFrontOldTiresProfile);
-        leftFrontOldTiresBrandTextField.setText(addChangeData.leftFrontOldTiresBrand);
-        leftFrontOldTiresModelTextField.setText(addChangeData.leftFrontOldTiresModel);
-        
-        rightFrontOldTiresSizeTextField.setText(addChangeData.rightFrontOldTiresSize);
-        rightFrontOldTiresProfileTextField.setText(addChangeData.rightFrontOldTiresProfile);
-        rightFrontOldTiresBrandTextField.setText(addChangeData.rightFrontOldTiresBrand);
-        rightFrontOldTiresModelTextField.setText(addChangeData.rightFrontOldTiresModel);
-        
-        rearLeftOldTiresSizeTextField.setText(addChangeData.rearLeftOldTiresSize);
-        rearLeftOldTiresProfileTextField.setText(addChangeData.rearLeftOldTiresProfile);
-        rearLeftOldTiresBrandTextField.setText(addChangeData.rearLeftOldTiresBrand);
-        rearLeftOldTiresModelTextField.setText(addChangeData.rearLeftOldTiresModel);
-        
-        rearRightOldTiresSizeTextField.setText(addChangeData.rearRightOldTiresSize);
-        rearRightOldTiresProfileTextField.setText(addChangeData.rearRightOldTiresProfile);
-        rearRightOldTiresBrandTextField.setText(addChangeData.rearRightOldTiresBrand);
-        rearRightOldTiresModelTextField.setText(addChangeData.rearRightOldTiresModel);
-        
-        storeOldTiresCheckBox.setSelected(addChangeData.storeOldTires);
-    }
-
-    private void setPrompts() {
-        PromptSupport.setPrompt(EX__JAN_VAN__VLIET, nameTextField);
-        PromptSupport.setPrompt(EX__SCHEISTRAAT_411, addressTextField);
-        PromptSupport.setPrompt(EX_06_81923452, phoneNumberTextField);
-        PromptSupport.setPrompt(EX__JV_VLIVENL, emailTextField);
-        
-        PromptSupport.setPrompt(EX__HONDA, brandTextField);
-        PromptSupport.setPrompt(EX__CIVIC, modelTextField);
-        PromptSupport.setPrompt(EX_34LGH5, licensePlatesTextField);
-        PromptSupport.setPrompt(EX_99999, mileageTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, leftFrontNewTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, leftFrontNewTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontNewTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontNewTiresModelTextField);
-        PromptSupport.setPrompt(EX_24, leftFrontNewTiresPressureTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rightFrontNewTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rightFrontNewTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontNewTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontNewTiresModelTextField);
-        PromptSupport.setPrompt(EX_24, rightFrontNewTiresPressureTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rearLeftNewTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rearLeftNewTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftNewTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftNewTiresModelTextField);
-        PromptSupport.setPrompt(EX_24, rearLeftNewTiresPressureTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rearRightNewTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rearRightNewTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightNewTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightNewTiresModelTextField);
-        PromptSupport.setPrompt(EX_24, rearRightNewTiresPressureTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, leftFrontOldTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, leftFrontOldTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, leftFrontOldTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, leftFrontOldTiresModelTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rightFrontOldTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rightFrontOldTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rightFrontOldTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rightFrontOldTiresModelTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rearLeftOldTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rearLeftOldTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearLeftOldTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearLeftOldTiresModelTextField);
-        
-        PromptSupport.setPrompt(EX_1856514, rearRightOldTiresSizeTextField);
-        PromptSupport.setPrompt(EX_41, rearRightOldTiresProfileTextField);
-        PromptSupport.setPrompt(EX__CONTINENTAL, rearRightOldTiresBrandTextField);
-        PromptSupport.setPrompt(EX__CONTI_ECO_CONTACT5, rearRightOldTiresModelTextField);
-        
-    }
-    
-    private void setEditable(boolean value) {    
-        
-        nameTextField.setEditable(value);
-        addressTextField.setEditable(value);
-        phoneNumberTextField.setEditable(value);
-        emailTextField.setEditable(value);
-        
-        brandTextField.setEditable(value);
-        modelTextField.setEditable(value);
-        licensePlatesTextField.setEditable(value);
-        mileageTextField.setEditable(value);
-        
-        leftFrontNewTiresSizeTextField.setEditable(value);
-        leftFrontNewTiresProfileTextField.setEditable(value);
-        leftFrontNewTiresBrandTextField.setEditable(value);
-        leftFrontNewTiresModelTextField.setEditable(value);
-        leftFrontNewTiresPressureTextField.setEditable(value);
-        
-        rightFrontNewTiresSizeTextField.setEditable(value);
-        rightFrontNewTiresProfileTextField.setEditable(value);
-        rightFrontNewTiresBrandTextField.setEditable(value);
-        rightFrontNewTiresModelTextField.setEditable(value);
-        rightFrontNewTiresPressureTextField.setEditable(value);
-        
-        rearLeftNewTiresSizeTextField.setEditable(value);
-        rearLeftNewTiresProfileTextField.setEditable(value);
-        rearLeftNewTiresBrandTextField.setEditable(value);
-        rearLeftNewTiresModelTextField.setEditable(value);
-        rearLeftNewTiresPressureTextField.setEditable(value);
-        
-        rearRightNewTiresSizeTextField.setEditable(value);
-        rearRightNewTiresProfileTextField.setEditable(value);
-        rearRightNewTiresBrandTextField.setEditable(value);
-        rearRightNewTiresModelTextField.setEditable(value);
-        rearRightNewTiresPressureTextField.setEditable(value);
-        
-        leftFrontOldTiresSizeTextField.setEditable(value);
-        leftFrontOldTiresProfileTextField.setEditable(value);
-        leftFrontOldTiresBrandTextField.setEditable(value);
-        leftFrontOldTiresModelTextField.setEditable(value);
-        
-        rightFrontOldTiresSizeTextField.setEditable(value);
-        rightFrontOldTiresProfileTextField.setEditable(value);
-        rightFrontOldTiresBrandTextField.setEditable(value);
-        rightFrontOldTiresModelTextField.setEditable(value);
-        
-        rearLeftOldTiresSizeTextField.setEditable(value);
-        rearLeftOldTiresProfileTextField.setEditable(value);
-        rearLeftOldTiresBrandTextField.setEditable(value);
-        rearLeftOldTiresModelTextField.setEditable(value);
-        
-        rearRightOldTiresSizeTextField.setEditable(value);
-        rearRightOldTiresProfileTextField.setEditable(value);
-        rearRightOldTiresBrandTextField.setEditable(value);
-        rearRightOldTiresModelTextField.setEditable(value);
-        
-        storeOldTiresCheckBox.setEnabled(value);
-    }
-    
-    public void resetData () {
-        
-        nameTextField.setText(null);
-        addressTextField.setText(null);
-        phoneNumberTextField.setText(null);
-        emailTextField.setText(null);
-        
-        brandTextField.setText(null);
-        modelTextField.setText(null);
-        licensePlatesTextField.setText(null);
-        mileageTextField.setText(null);
-        
-        leftFrontNewTiresSizeTextField.setText(null);
-        leftFrontNewTiresProfileTextField.setText(null);
-        leftFrontNewTiresBrandTextField.setText(null);
-        leftFrontNewTiresModelTextField.setText(null);
-        leftFrontNewTiresPressureTextField.setText(null);
-        
-        rightFrontNewTiresSizeTextField.setText(null);
-        rightFrontNewTiresProfileTextField.setText(null);
-        rightFrontNewTiresBrandTextField.setText(null);
-        rightFrontNewTiresModelTextField.setText(null);
-        rightFrontNewTiresPressureTextField.setText(null);
-        
-        rearLeftNewTiresSizeTextField.setText(null);
-        rearLeftNewTiresProfileTextField.setText(null);
-        rearLeftNewTiresBrandTextField.setText(null);
-        rearLeftNewTiresModelTextField.setText(null);
-        rearLeftNewTiresPressureTextField.setText(null);
-        
-        rearRightNewTiresSizeTextField.setText(null);
-        rearRightNewTiresProfileTextField.setText(null);
-        rearRightNewTiresBrandTextField.setText(null);
-        rearRightNewTiresModelTextField.setText(null);
-        rearRightNewTiresPressureTextField.setText(null);
-        
-        leftFrontOldTiresSizeTextField.setText(null);
-        leftFrontOldTiresProfileTextField.setText(null);
-        leftFrontOldTiresBrandTextField.setText(null);
-        leftFrontOldTiresModelTextField.setText(null);
-        
-        rightFrontOldTiresSizeTextField.setText(null);
-        rightFrontOldTiresProfileTextField.setText(null);
-        rightFrontOldTiresBrandTextField.setText(null);
-        rightFrontOldTiresModelTextField.setText(null);
-        
-        rearLeftOldTiresSizeTextField.setText(null);
-        rearLeftOldTiresProfileTextField.setText(null);
-        rearLeftOldTiresBrandTextField.setText(null);
-        rearLeftOldTiresModelTextField.setText(null);
-        
-        rearRightOldTiresSizeTextField.setText(null);
-        rearRightOldTiresProfileTextField.setText(null);
-        rearRightOldTiresBrandTextField.setText(null);
-        rearRightOldTiresModelTextField.setText(null);
-        
-        storeOldTiresCheckBox.setSelected(false);
-    }
-    
-    private static final String EX_99999 = "ex. 99999";
-    private static final String EX_34LGH5 = "ex. 34-LGH-5";
-    private static final String EX__CIVIC = "ex. Civic";
-    private static final String EX__HONDA = "ex. Honda";
-    private static final String EX__JV_VLIVENL = "ex. JvV@live.nl";
-    private static final String EX_06_81923452 = "ex. 06 81923452";
-    private static final String EX__SCHEISTRAAT_411 = "ex. Scheistraat 411";
-    private static final String EX__JAN_VAN__VLIET = "ex. Jan van Vliet";
-    private static final String EX_24 = "ex. 2.4";
-    private static final String EX__CONTI_ECO_CONTACT5 = "ex. ContiEcoContact5";
-    private static final String EX_1856514 = "ex. 185/65/14";
-    private static final String EX_41 = "ex. 4.1";
-    private static final String EX__CONTINENTAL = "ex. Continental";
 }

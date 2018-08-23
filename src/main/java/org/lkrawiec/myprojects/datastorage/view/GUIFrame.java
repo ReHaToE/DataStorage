@@ -10,13 +10,14 @@ import java.util.logging.Logger;
 import javax.swing.JPanel;
 
 /**
- *
- * @author lukii
+ * Main frame of the application. Everything will be shown inside this frame.
+ * Has two panels that will be changed depending on current state of View.
+ * @author Lukasz Krawiec
  */
 public class GUIFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame
+     * Initialisates GUIFrame components
      */
     public GUIFrame() {
         initComponents();
@@ -69,72 +70,12 @@ public class GUIFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
+     * Removes everything inside upper panel and sets it with given
+     * panel. Makes panel visible. If method is called with null, hides upper 
+     * panel.
+     * 
+     * @param panel given panel
      */
-//    public static void main(String args[]) {
-//        /* Set the Nimbus look and feel */
-//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-//         */
-//        try {
-//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(GUIFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        }
-//        //</editor-fold>
-//        //</editor-fold>
-//        GUIFrame frame = new GUIFrame();
-//        /* Create and display the form */
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                //test
-//                
-//                frame.setFirstPanel(new ChangeFormPanel());
-//                frame.setSecondPanel(new ButtonsPanel());
-//                frame.setVisible(true);
-//            }
-//        });
-//        
-//        try {
-//            Thread.sleep(5000);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
-//        java.awt.EventQueue.invokeLater(() -> {
-//            //test
-//            
-//            frame.setFirstPanel(new MainPanel());
-//            frame.setSecondPanel(new ButtonsPanel());
-//            frame.setVisible(true);
-//        });
-//        
-//        try {
-//            Thread.sleep(5000);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
-//        java.awt.EventQueue.invokeLater(() -> {
-//            //test
-//            HistoryPanel hp = new HistoryPanel();
-//            hp.setSecondPanel(new ChangeFormPanel());
-//            frame.setFirstPanel(hp);
-//            frame.setSecondPanel(new ButtonsPanel());
-//            frame.setVisible(true);
-//        });
-//    }
     public void setFirstPanel(JPanel panel) {
         firstPanel.removeAll();
         if (panel != null) {
@@ -145,6 +86,13 @@ public class GUIFrame extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Removes everything inside lower panel and sets it with given
+     * panel. Makes panel visible. If method is called with null, hides lower 
+     * panel.
+     * 
+     * @param panel given panel
+     */
     public void setSecondPanel(JPanel panel) {
         secondPanel.removeAll();
         if (panel != null) {
@@ -155,10 +103,16 @@ public class GUIFrame extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * Sets GUI visible
+     */
     public void startGUI() {
         setVisible(true);       
     }
 
+    /**
+     * UI elements
+     */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel firstPanel;
     private javax.swing.JPanel secondPanel;

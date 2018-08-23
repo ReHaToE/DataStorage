@@ -55,7 +55,8 @@
                         <additionalOptions>
                             <additionalOption>-umlImageDirectory uml</additionalOption>
 			    <additionalOption>-umlImageFormat SVG</additionalOption>
-			    <!--<additionalOption>-umlIncludePrivateFields true</additionalOption>-->
+			    <additionalOption>-umlIncludePrivateFields true</additionalOption>
+			    <additionalOption>-umlIncludePrivateMethods true</additionalOption>
                         </additionalOptions>
                     </configuration>
                 </execution>
