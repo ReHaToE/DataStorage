@@ -37,7 +37,7 @@ public class View {
     private final ChangeFormPanel changeFormPanel = new ChangeFormPanel(true);
     /** Buttons panel */
     private final ButtonsPanel buttonsPanel = new ButtonsPanel();
-    /** Main panel shown at the start of the application */
+    /** Main panel shown at the start of this application */
     private final MainPanel mainPanel = new MainPanel();
     /** Current state of view */
     private State state = State.UNKNOWN;
@@ -146,7 +146,7 @@ public class View {
     }
 
     /**
-     * Configurates panels to match the logic of view by
+     * Configures panels to match the logic of view by
      * setting actions for events
      */
     private void setActionForEvents() {

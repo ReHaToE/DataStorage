@@ -26,7 +26,7 @@ public class MainPanel extends javax.swing.JPanel {
     }
 
     /**
-     *  Registers given action on that button
+     * Registers given action on add new change button press.
      * 
      * @param addChangeButtonAction given action
      */
@@ -35,7 +35,7 @@ public class MainPanel extends javax.swing.JPanel {
     }
 
     /**
-     *  Registers given action on that button
+     *  Registers given action on search car button press.
      * 
      * @param searchCarButtonAction given action
      */
@@ -44,7 +44,7 @@ public class MainPanel extends javax.swing.JPanel {
     }
 
     /**
-     * Initialisates components of given UI elements (generated)
+     * Initializes components of given UI elements (generated)
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -84,7 +84,7 @@ public class MainPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Fires action on button press
+     * Fires action on add new change button press
      * Action can not be null or exception will be thrown
      * @param evt given action
      */
@@ -93,7 +93,7 @@ public class MainPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_newChangeButtonActionPerformed
 
     /**
-     * Fires action on button press
+     * Fires action on search car button press
      * Action can not be null or exception will be thrown
      * @param evt given action
      */

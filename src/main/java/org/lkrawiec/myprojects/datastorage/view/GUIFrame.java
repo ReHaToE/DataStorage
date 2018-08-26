@@ -5,8 +5,6 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JPanel;
 
 /**
@@ -17,7 +15,7 @@ import javax.swing.JPanel;
 public class GUIFrame extends javax.swing.JFrame {
 
     /**
-     * Initialisates GUIFrame components
+     * Initializes GUIFrame components
      */
     public GUIFrame() {
         initComponents();

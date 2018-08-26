@@ -47,9 +47,9 @@ public class ChangeFormPanel extends javax.swing.JPanel {
     private static final String EX__CONTINENTAL = "ex. Continental";
     
     /**
-     * Initialisates components of change form panel.
-     * If given param is true, sets prompts else sets given param to false.
-     * @param editable given param
+     * Initializes components of change form panel.
+     * If given parameter is true, sets prompts else sets given parameter to false.
+     * @param editable given parameter
      */
     public ChangeFormPanel(boolean editable) {
         initComponents();
@@ -61,6 +61,11 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         }
     }
 
+    /**
+     * Gathers data from this panel and returns it.
+     * 
+     * @return Gathered data.
+     */
     public AddChangeData getAddChangeData() {
         AddChangeData addChangeData = new AddChangeData();
         addChangeData.name = nameTextField.getText();
@@ -122,6 +127,10 @@ public class ChangeFormPanel extends javax.swing.JPanel {
         return addChangeData;
     }
 
+    /**
+     * Fills this panel with given data. 
+     * @param addChangeData given data
+     */
     public void fillWithData(AddChangeData addChangeData) {
         nameTextField.setText(addChangeData.name);
         addressTextField.setText(addChangeData.address);

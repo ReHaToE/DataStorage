@@ -6,10 +6,8 @@
 package org.lkrawiec.myprojects.datastorage.view;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.logging.Logger;
-import javax.swing.JPanel;
 import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 
 /**
@@ -20,25 +18,26 @@ import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
  * @author Lukasz Krawiec
  */
 public class HistoryPanel extends javax.swing.JPanel {
-    /** Action to be performed on button press*/
+    /** Action to be performed on search button press*/
     private Action searchAction;
     /** List with change history that will be shown after selected change*/
     private LinkedList<AddChangeData> changes;
     /** Panel that will be shown to the user after the selected car history
      * change. If there is no change selected, panel is invisible. */
-    private ChangeFormPanel changeFormPanel = new ChangeFormPanel(false);
+    private final ChangeFormPanel changeFormPanel;
     
     /**
-     * Creates new form HistoryPanel
+     * Creates new history panel
      */
     public HistoryPanel() {
+        this.changeFormPanel = new ChangeFormPanel(false);
         initComponents();
         secondPanel.add(changeFormPanel);
         changeFormPanel.setVisible(false);        
     }
     
     /**
-     * Initialisates components of given UI elements (generated)
+     * Initializes components of given UI elements (generated)
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -48,7 +47,7 @@ public class HistoryPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         searchLicensePlatesTextField = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        searchButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         historyChangesList = new javax.swing.JList<>();
         jLabel2 = new javax.swing.JLabel();
@@ -77,10 +76,10 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 10);
         jPanel1.add(searchLicensePlatesTextField, gridBagConstraints);
 
-        jButton1.setText("Search");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        searchButton.setText("Search");
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                searchButtonActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -90,7 +89,7 @@ public class HistoryPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        jPanel1.add(jButton1, gridBagConstraints);
+        jPanel1.add(searchButton, gridBagConstraints);
 
         historyChangesList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
@@ -139,13 +138,13 @@ public class HistoryPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Fires action on button press
+     * Fires action on search button press
      * Action can not be null or exception will be thrown
      * @param evt given action
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
         searchAction.Do();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_searchButtonActionPerformed
 
     /**
      * If there are no changes, hides change form panel and returns.
@@ -181,8 +180,8 @@ public class HistoryPanel extends javax.swing.JPanel {
     }
     
     /**
-     * Sets up new changed and updates UI
-     * @param newChanges 
+     * Sets up new changes and updates UI
+     * @param newChanges new changes 
      */
     public void setAddChangeDataList(LinkedList<AddChangeData> newChanges) {
         changes = newChanges;
@@ -190,7 +189,7 @@ public class HistoryPanel extends javax.swing.JPanel {
     }
 
     /**
-     * Updates history change list with new changes
+     * Updates history change list with new previously set changes
      */
     private void updateHistoryChanges() {
         if (changes == null) {
@@ -204,7 +203,7 @@ public class HistoryPanel extends javax.swing.JPanel {
 
     /**
      * Creates formatted changes for history change list
-     * @param historyChanges
+     * @param historyChanges history change list
      * @return list of formatted changes
      */
     private String[] createHistoryChangesFormattedItems(
@@ -227,11 +226,11 @@ public class HistoryPanel extends javax.swing.JPanel {
      */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> historyChangesList;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton searchButton;
     private javax.swing.JTextField searchLicensePlatesTextField;
     private javax.swing.JPanel secondPanel;
     // End of variables declaration//GEN-END:variables
