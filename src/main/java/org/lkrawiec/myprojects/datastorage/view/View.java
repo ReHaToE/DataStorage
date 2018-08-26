@@ -7,8 +7,11 @@ package org.lkrawiec.myprojects.datastorage.view;
 
 import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
 import java.awt.EventQueue;
+import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
+import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.SwingUtilities;
 import org.lkrawiec.myprojects.datastorage.model.Model;
 
 /**
@@ -20,7 +23,7 @@ import org.lkrawiec.myprojects.datastorage.model.Model;
 public class View {
 
     /**
-     * Enum for state of view
+     * Enumeration for state of view
      */
     public enum State {
         MENU,
@@ -126,23 +129,15 @@ public class View {
      * @param a given action
      */
     private void dispatchToUIThread(Action a) {
-        // FIXME
-        if (EventQueue.isDispatchThread()) {
-//            System.out.println("in thread");
-            new Thread(() -> {
-                EventQueue.invokeLater(() -> {
-//                  System.out.println("out of thread");
-                    a.Do();
-                });
-            }).start();
-
+        if (SwingUtilities.isEventDispatchThread()) {
+            a.Do();
             return;
         }
-        EventQueue.invokeLater(() -> {
-//            System.out.println("out of thread");
-            a.Do();
-        });
-//        SwingUtilities.invokeLater(()->{a.Do();});
+        try {
+            SwingUtilities.invokeAndWait(()->{a.Do();});
+        } catch (InterruptedException | InvocationTargetException ex) {
+            Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
