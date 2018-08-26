@@ -7,7 +7,6 @@ package org.lkrawiec.myprojects.datastorage.model;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
 
 /**
  * Class containing all information to be used by view.

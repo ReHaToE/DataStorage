@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.common;
+package org.lkrawiec.myprojects.datastorage.model;
 
 import java.util.Date;
 

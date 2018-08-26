@@ -5,7 +5,7 @@
  */
 package org.lkrawiec.myprojects.datastorage.view;
 
-import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
+import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
 import org.jdesktop.swingx.prompt.PromptSupport;
 
 /**

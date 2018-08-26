@@ -8,7 +8,7 @@ package org.lkrawiec.myprojects.datastorage.view;
 import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.logging.Logger;
-import org.lkrawiec.myprojects.datastorage.common.AddChangeData;
+import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
 
 /**
  * History panel with possibility to search history of the car by entering 
