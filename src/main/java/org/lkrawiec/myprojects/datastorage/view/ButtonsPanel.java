@@ -6,18 +6,31 @@
 package org.lkrawiec.myprojects.datastorage.view;
 
 /**
- *
- * @author lukii
+ * Panel containing two buttons with save and back options.
+ * 
+ * @author Lukasz Krawiec
  */
 public class ButtonsPanel extends javax.swing.JPanel {
 
+    /** Action to be performed on save button */
     private Action saveAction;
+    /** Action to be performed on back button */
     private Action backAction;
 
+    /** 
+     * Setter for save action button.
+     * 
+     * @param saveAction given action
+     */
     public void setSaveAction(Action saveAction) {
         this.saveAction = saveAction;
     }
 
+    /**
+     * Setter for back action button.
+     * 
+     * @param backAction given action
+     */
     public void setBackAction(Action backAction) {
         this.backAction = backAction;
     }
@@ -29,6 +42,11 @@ public class ButtonsPanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    /**
+     * Sets if save button will be visible.
+     * 
+     * @param visible visibility to be set
+     */
     public void setSaveButtonVisible(boolean visible) {
         saveButton.setVisible(visible);
     } 
@@ -79,15 +97,28 @@ public class ButtonsPanel extends javax.swing.JPanel {
         add(backButton, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Fires action on back button press.
+     * 
+     * @param evt given action
+     */
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         backAction.Do();
     }//GEN-LAST:event_backButtonActionPerformed
 
+    /**
+     * Fires action on save button press.
+     * 
+     * @param evt given action
+     */
     private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
         saveAction.Do();
     }//GEN-LAST:event_saveButtonActionPerformed
 
 
+    /**
+     * Elements of UI
+     */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JButton saveButton;

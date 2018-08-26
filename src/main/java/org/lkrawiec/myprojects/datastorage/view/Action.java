@@ -6,8 +6,9 @@
 package org.lkrawiec.myprojects.datastorage.view;
 
 /**
- *
- * @author lukii
+ * Interface for Action.
+ * 
+ * @author Lukasz Krawiec
  */
 public interface Action {
     void Do();

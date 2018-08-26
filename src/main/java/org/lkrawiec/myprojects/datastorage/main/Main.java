@@ -8,8 +8,9 @@ package org.lkrawiec.myprojects.datastorage.main;
 import org.lkrawiec.myprojects.datastorage.view.View;
 
 /**
- *
- * @author lukii
+ * Main class with main method.
+ * 
+ * @author Lukasz Krawiec
  */
 public class Main {
     public static void main(String[] args) {
