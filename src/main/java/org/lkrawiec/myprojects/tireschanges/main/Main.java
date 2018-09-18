@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.main;
+package org.lkrawiec.myprojects.tireschanges.main;
 
-import org.lkrawiec.myprojects.datastorage.view.View;
+import org.lkrawiec.myprojects.tireschanges.view.View;
 
 /**
  * Main class with main method.

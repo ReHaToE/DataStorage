@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.model;
+package org.lkrawiec.myprojects.tireschanges.model;
 
 import java.util.HashMap;
 import java.util.LinkedList;

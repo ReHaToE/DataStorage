@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.view;
+package org.lkrawiec.myprojects.tireschanges.view;
 
 import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.logging.Logger;
-import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
+import org.lkrawiec.myprojects.tireschanges.model.AddChangeData;
 
 /**
  * History panel with possibility to search history of the car by entering 

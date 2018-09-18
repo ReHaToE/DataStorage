@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.view;
+package org.lkrawiec.myprojects.tireschanges.view;
 
-import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
+import org.lkrawiec.myprojects.tireschanges.model.AddChangeData;
 import java.awt.EventQueue;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
-import org.lkrawiec.myprojects.datastorage.model.Model;
+import org.lkrawiec.myprojects.tireschanges.model.Model;
 
 /**
  * View represents logic for displaying UI and has control over model.

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.lkrawiec.myprojects.datastorage.view;
+package org.lkrawiec.myprojects.tireschanges.view;
 
-import org.lkrawiec.myprojects.datastorage.model.AddChangeData;
+import org.lkrawiec.myprojects.tireschanges.model.AddChangeData;
 import org.jdesktop.swingx.prompt.PromptSupport;
 
 /**
