@@ -18,22 +18,4 @@ public class Main {
 //        view.showMenu();
         view.makeVisible();
     }
-
-//    private static void test1() {
-//        View view = new View();
-//        view.showMenu();
-//        view.makeVisible();
-//    }
-//    
-//    private static void test2() {
-//        View view = new View();
-//        view.showHistoryUI();
-//        view.makeVisible();
-//    }
-//        
-//    private static void test4() {
-//        View view = new View();
-//        view.showAddChangeUI();
-//        view.makeVisible();
-//    }
 }

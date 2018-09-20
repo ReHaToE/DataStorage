@@ -10,6 +10,7 @@ package org.lkrawiec.myprojects.tireschanges.view;
  * 
  * @author Lukasz Krawiec
  */
+@FunctionalInterface
 public interface Action {
     void Do();
 }

@@ -17,7 +17,7 @@ import org.lkrawiec.myprojects.tireschanges.model.Model;
 /**
  * View represents logic for displaying UI and has control over model.
  * This class is part of VM (View-Model).
- * 
+ * d
  * @author Lukasz Krawiec
  */
 public class View {
